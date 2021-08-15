@@ -1,0 +1,142 @@
+$text-color: white;
+$title-color: white;
+
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #222222;
+}
+
+// Navbar
+
+.navbar {
+  height: 78px;
+  background: #222222d8!important;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+//Landing
+
+.art {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.landingText {
+  margin-top: 2rem;
+}
+
+//Footer
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+// Buttons
+
+.btn {
+  margin: 5px;
+  background-color: transparent;
+  border-color: white;
+}
+  
+.bg-dark {
+  background-color: #222222 !important;
+}
+
+// Text elements
+  
+h1, h2, h3, h4, h5 {
+      font-family: 'Montserrat', sans-serif;
+      color: $title-color;
+}
+
+a {
+      text-decoration: none;
+      color: $text-color;
+}
+
+p {
+    color: $text-color;
+}
+
+  
+.rgb {
+      background: #dae4ff;
+      -webkit-animation: rgb 30s ease infinite;
+      -moz-animation: rgb 30s ease infinite;
+      animation: rgb 30s ease infinite;
+}
+  
+  
+@keyframes rgb {
+    0%, 100% {
+      background: #5f86f2;
+    }
+    12.5% {
+      background: #a65ff2;
+    }
+    25% {
+      background: #f25fd0;
+    }
+    37.5% {
+      background: #f25f61;
+    }
+    50% {
+      background: #f2cb5f;
+    }
+    62.5% {
+      background: #abf25f;
+    }
+    75% {
+      background: #5ff281;
+    }
+    87.5% {
+      background: #5ff2f0;
+    }
+}
+  
+.bi-record-fill {
+    text-shadow: 0 0 10px #ffc107;
+}
+  
+.blinkMe {
+    animation: blinker 2s linear infinite;
+}
+    
+@keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+}
+  
+  
+.status {
+    height: auto;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+    border: none;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+}
+  
+.card {
+    height: auto;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    background: #222222 !important;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    overflow: visible;
+}
+  
+i.socials {
+     color: #fff !important;
+}
+  
