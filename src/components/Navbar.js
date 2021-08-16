@@ -5,7 +5,7 @@ import xkrlogo from '../images/logo.png'
 
 const Menubar = () => {
     return(
-      <Navbar expand="lg">
+      <Navbar  expand="lg">
   <Container>
     <Navbar.Brand>
       <Link to='/'>

@@ -10,10 +10,8 @@ const Layout = (props) => {
     return(
         <div>
             <Menubar/>
-            <Container className='layout'>
             {props.children}
             <Footer />
-            </Container>
         </div>
     )
 }
