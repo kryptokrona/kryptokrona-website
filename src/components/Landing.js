@@ -2,12 +2,14 @@ import * as React from 'react'
 import { Button, Container } from 'react-bootstrap';
 import { Link } from 'gatsby';
 import art from '../images/xkrart.png'
+import AlertBanner from './Alert';
 
 const Landing = () => {
     return(
     <Container>
-        <div className=''>
+        <div>
             <div className='rgb artdiv'>
+            <AlertBanner/>
                 <img className='art' src={art} alt=''/>  
             </div>
             <div className='landingText mb-5'>
