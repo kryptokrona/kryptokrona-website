@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Row } from 'react-bootstrap'
 
-//Not finished...
+//Not finished... how the F do I use Fetch here lol
 
 const Statusbar = () => {
     return(

@@ -2,6 +2,8 @@ import { Button } from 'react-bootstrap'
 import * as React from 'react' 
 import xkrsymbol from '../images/xkrsymbol.png'
 
+//Add social with links etc
+
 const Footer = () => {
     return(
         <footer>

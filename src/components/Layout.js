@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Container } from 'react-bootstrap'
 import Footer from './Footer'
 import Menubar from './Navbar'
 

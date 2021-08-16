@@ -6,6 +6,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     background-color: #222222;
     margin-top: 78px;
+    padding: 0px
 }
 
 .layout {
@@ -57,11 +58,14 @@ a.navLink {
 
 //Landing
 
-.artdiv {}
+.artdiv {
+  max-height: 50vh;
+}
 
 .art {
-  max-width: 100%;
-  object-fit: cover;
+  width: 100%;
+  background-size: cover;
+  background: no-repeat 50px;
 }
 
 .landingText {
@@ -74,9 +78,6 @@ a.navLink {
   margin-top: 3rem;
 }
 
-.vh100 {
-  height: 60vh;
-}
 
 //Footer
 
