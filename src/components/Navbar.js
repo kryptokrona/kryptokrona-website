@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import { Link } from 'gatsby'
-import logo from '../images/logo.svg'
+import logo from '../images/logo.png'
 
 const Menubar = () => {
     return(
