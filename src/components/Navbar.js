@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import { Link } from 'gatsby'
-import logo from '../images/logo.png'
+import xkrlogo from '../images/logo.png'
 
 const Menubar = () => {
     return(
@@ -9,7 +9,7 @@ const Menubar = () => {
   <Container>
     <Navbar.Brand>
       <Link to='/'>
-      <img src={logo} alt="Logo" height='36'/>
+      <img src={xkrlogo} alt="Logo" height='36'/>
       </Link>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
