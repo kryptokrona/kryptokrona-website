@@ -1,13 +1,15 @@
 import * as React from 'react';
+import GetStarted from '../components/GetStarted';
 import Layout from '../components/Layout';
+import PageHeader from '../components/PageHeader';
 
-const Homepage = () => {
+const StartedPage = () => {
     return(
         <Layout>
-            <h1>Get Started</h1>
-            <p>This is my site</p>
+            <PageHeader pageTitle='Get Started' pageText='Heres everything you need to get started'/>
+            <GetStarted/>
         </Layout>
     )
 }
 
-export default Homepage
+export default StartedPage

@@ -13,17 +13,15 @@ function AlertBanner() {
   
     if (show) {
       return (
-          <Container>
             <Alert variant="danger" onClose={() => setShow(false)} dismissible>
                 <h6><span class="p-2">&#128172;</span>New wallet update! <a className='alertLink' href='https:/github.com'>Download</a></h6>
             </Alert>
-          </Container>
 
       );
     }
     return AlertBanner;
   }
   
-  render(<AlertBanner/>);
+  render(<Container><AlertBanner/></Container>);
 
 export default AlertBanner

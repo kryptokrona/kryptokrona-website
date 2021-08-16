@@ -34,6 +34,8 @@ body {
 }
 
 .navbar {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   top: 0px;
   position: fixed;
   z-index: 1000;
@@ -69,6 +71,8 @@ a.navLink {
 }
 
 .landingText {
+  padding-left: 0.5rem;
+  padding-right:0.5rem;
   margin-top: 2rem;
 }
 
@@ -207,9 +211,8 @@ p {
  // Alert
 
 .alert {
-  position: absolute;
-  width: 100%;
-  max-width: 1320px;
+  height: 3.5rem;
+  position: relative;
   z-index: 999;
   margin: 0;
   text-align: center;
@@ -218,6 +221,7 @@ p {
   border: none;
   border-radius: 0rem;
 }
+
 
 .alertLink {
   text-decoration: underline;

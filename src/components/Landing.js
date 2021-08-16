@@ -9,7 +9,7 @@ const Landing = () => {
     <Container>
         <div>
             <div className='rgb artdiv'>
-            <AlertBanner/>
+                <AlertBanner/>
                 <img className='art' src={art} alt=''/>  
             </div>
             <div className='landingText mb-5'>

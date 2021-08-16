@@ -1,13 +1,13 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
+import PageHeader from '../components/PageHeader';
 
-const Homepage = () => {
+const DownloadPage = () => {
     return(
         <Layout>
-            <h1>Download</h1>
-            <p>This is my site</p>
+            <PageHeader pageTitle='Downloads' pageText='Download and run'/>
         </Layout>
     )
 }
 
-export default Homepage
+export default DownloadPage

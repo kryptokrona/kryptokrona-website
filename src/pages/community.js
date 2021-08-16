@@ -1,11 +1,13 @@
 import * as React from 'react';
+import Community from '../components/Community';
 import Layout from '../components/Layout';
+import PageHeader from '../components/PageHeader';
 
 const Homepage = () => {
     return(
         <Layout>
-            <h1>Community</h1>
-            <p>This is my site</p>
+            <PageHeader pageTitle='Community' pageText='Join the community and contribute to your future' />
+            <Community/>
         </Layout>
     )
 }

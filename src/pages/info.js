@@ -1,17 +1,12 @@
 import * as React from 'react';
-import Menubar from '../components/Navbar';
-import { Container } from 'react-bootstrap';
-import Footer from '../components/Footer';
+import PageHeader from '../components/PageHeader';
+import Layout from '../components/Layout';
 
 const InfoPage = () => {
     return(
-        <div>
-                    <Menubar/>
-                    <Container>
-                    <h1>info</h1>
-                    <Footer/>
-                    </Container>
-        </div>
+        <Layout>
+            <PageHeader pageTitle='Information' pageText='So you want to know more?' />
+        </Layout>
     )
 }
 
