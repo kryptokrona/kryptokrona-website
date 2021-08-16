@@ -27,6 +27,7 @@ body {
   backdrop-filter: saturate(180%) blur(20px);
 }
 
+
 .navbar-collapse {
   background: #222222d8!important;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -35,6 +36,14 @@ body {
 
 .navbar-toggler-icon {
   border-color: white;
+}
+
+a.navLink {
+  margin-right: 1rem;
+
+  :hover {
+    color: grey;
+  }
 }
 
 //Landing

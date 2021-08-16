@@ -15,11 +15,11 @@ const Menubar = () => {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto">
-        <Nav.Link Variant='light'><Link to='/get-started'>Get Started</Link></Nav.Link>
-        <Nav.Link><Link to='/download'>Download</Link></Nav.Link>
-        <Nav.Link><Link to='/hugin'>Hugin</Link></Nav.Link>
-        <Nav.Link><Link to='/community'>Community</Link></Nav.Link>
-        <Nav.Link><Link to='/info'>Info</Link></Nav.Link>
+        <Link className='navLink' to='/get-started'>Get Started</Link>
+        <Link className='navLink' to='/download'>Download</Link>
+        <Link className='navLink' to='/hugin'>Hugin</Link>
+        <Link className='navLink' to='/community'>Community</Link>
+        <Link className='navLink' to='/info'>Info</Link>
       </Nav>
     </Navbar.Collapse>
   </Container>
