@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { Row } from 'react-bootstrap'
 
+//Not finished...
+
 const Statusbar = () => {
     return(
         <Row className='row bg-dark'>
