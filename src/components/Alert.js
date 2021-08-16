@@ -5,6 +5,7 @@ import render from 'dom-serializer'
 import '../theme/theme.scss'
 
 //Styled under //Alert in theme.scss
+//TODO Make it remember shit :P
 
 
 function AlertBanner() {

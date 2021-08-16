@@ -18,15 +18,6 @@ const Contributors = () => {
                 <div className='text-center'>
                     <a href='https://github.com/swepool'><img src='https://avatars1.githubusercontent.com/u/36674091?v=4' width='60px' alt=''/></a><br/>
                 </div>
-                <div className='text-center'>
-                    <a href='https://github.com/swepool'><img src='https://avatars1.githubusercontent.com/u/36674091?v=4' width='60px' alt=''/></a><br/>
-                </div>
-                <div className='text-center'>
-                    <a href='https://github.com/swepool'><img src='https://avatars1.githubusercontent.com/u/36674091?v=4' width='60px' alt=''/></a><br/>
-                </div>
-                <div className='text-center'>
-                    <a href='https://github.com/swepool'><img src='https://avatars1.githubusercontent.com/u/36674091?v=4' width='60px' alt=''/></a><br/>
-                </div>
             </div>
         </Container>
     )
