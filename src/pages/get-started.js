@@ -6,7 +6,7 @@ import PageHeader from '../components/PageHeader';
 const StartedPage = () => {
     return(
         <Layout>
-            <PageHeader pageTitle='Get Started' pageText='Heres everything you need to get started'/>
+            <PageHeader pageTitle='Get Started' pageText='Heres everything you need to get started' emoji='🚀'/>
             <GetStarted/>
         </Layout>
     )

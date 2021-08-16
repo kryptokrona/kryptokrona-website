@@ -5,7 +5,7 @@ import PageHeader from '../components/PageHeader';
 const HuginPage = () => {
     return(
         <Layout>
-            <PageHeader pageTitle='Hugin Messenger' pageText='This is our messenger' />
+            <PageHeader pageTitle='Hugin Messenger' pageText='This is our messenger' emoji='🔥' />
         </Layout>
     )
 }

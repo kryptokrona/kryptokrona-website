@@ -1,12 +1,15 @@
+// TODO
+//Add light theme
+
 $text-color: white;
 $title-color: white;
 
 
 body {
-    font-family: 'Roboto Mono', monospace;
-    background-color: #222222;
-    margin-top: 78px;
-    padding: 0px
+  font-family: 'Roboto Mono', monospace;
+  background-color: #222222;
+  margin-top: 78px;
+  padding: 0px
 }
 
 .layout {
@@ -111,11 +114,16 @@ footer {
   background-color: #222222 !important;
 }
 
-// Text elements
+.bottom {
+  position: absolute;
+  bottom:   1.5rem;
+}
+
+// General text elements
   
 h1, h2, h3, h4, h5 {
-      font-family: 'Montserrat', sans-serif;
-      color: $title-color;
+  font-family: 'Montserrat', sans-serif;
+  color: $title-color;
 }
 
 a {
@@ -130,15 +138,16 @@ p {
     color: $text-color;
 }
 
-  
-.rgb {
-      background: #dae4ff;
-      -webkit-animation: rgb 30s ease infinite;
-      -moz-animation: rgb 30s ease infinite;
-      animation: rgb 30s ease infinite;
-}
+
   
 // Animations
+
+.rgb {
+  background: #dae4ff;
+  -webkit-animation: rgb 30s ease infinite;
+  -moz-animation: rgb 30s ease infinite;
+  animation: rgb 30s ease infinite;
+}
   
 @keyframes rgb {
     0%, 100% {
@@ -199,8 +208,10 @@ p {
     margin-bottom: 1rem;
     color: rgb(255, 255, 255);
     border: none;
-    background: #222222 !important;
+    background: #222222a4 !important;
     overflow: visible;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
 }
 
  .grid {

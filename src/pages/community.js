@@ -6,7 +6,7 @@ import PageHeader from '../components/PageHeader';
 const Homepage = () => {
     return(
         <Layout>
-            <PageHeader pageTitle='Community' pageText='Join the community and contribute to your future' />
+            <PageHeader pageTitle='Community' pageText='Join the community and contribute to your future' emoji='❤️' />
             <Community/>
         </Layout>
     )
