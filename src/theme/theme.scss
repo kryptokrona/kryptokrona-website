@@ -268,7 +268,7 @@ p {
 .hugin-structure{
   background-color: $light-background-darkmode;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -282,7 +282,6 @@ p {
   background-color: #222222d8;
   margin-top: 3rem;
   color: $title-color;
-  width: 500px;
   padding: 1rem;
   border-radius: 5px;
   margin:1rem;
@@ -302,7 +301,6 @@ p {
   background-color: #222222d8;
   margin-top: 3rem;
   color: $title-color;
-  width: 500px;
   padding: 1rem;
   border-radius: 5px;
   margin:1rem;
@@ -319,13 +317,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 3rem;
 }
 
 .hugin-tutorial-section{  
   background-color: #222222d8;
   margin-top: 3rem;
   color: $title-color;
-  width: 500px;
   padding: 1rem;
   border-radius: 5px;
   margin:1rem;
@@ -335,7 +333,6 @@ p {
   background-color: #222222d8;
   margin-top: 3rem;
   color: $title-color;
-  width: 500px;
   padding: 1rem;
   border-radius: 5px;
   margin-bottom: 2rem;

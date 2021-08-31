@@ -16,18 +16,21 @@ const HuginDownload = (props) => {
                     <div className='hugin-download-buttons'>
 
                         {/* windows */}
-                        <a href='https://github.com/kryptokrona/hugin-messenger/releases/download/v0.3.3/HuginMessenger-Setup-0.3.3.exe' aria-label="github" target="_blank" rel="noreferrer"><h1><FaWindows></FaWindows></h1></a>
+                        <a href='https://github.com/kryptokrona/hugin-messenger/releases/download/v0.3.3/HuginMessenger-Setup-0.3.3.exe' aria-label="github" target="_blank" rel="noreferrer">
+                            <h1><FaWindows></FaWindows></h1></a>
 
                         {/* mac */}
-                        <a href='https://github.com/kryptokrona/hugin-messenger/releases/download/v0.3.3/HuginMessenger-0.3.3.dmg' aria-label="github" target="_blank" rel="noreferrer"><h1><FaApple></FaApple></h1></a>
+                        <a href='https://github.com/kryptokrona/hugin-messenger/releases/download/v0.3.3/HuginMessenger-0.3.3.dmg' aria-label="github" target="_blank" rel="noreferrer">
+                            <h1><FaApple></FaApple></h1></a>
 
                         {/* Linux */}
-                        <a href='' aria-label="github" target="_blank" rel="noreferrer"><h1><FaLinux></FaLinux></h1></a>
+                        <a href='' aria-label="github" target="_blank" rel="noreferrer">
+                            <h1><FaLinux></FaLinux></h1></a>
 
                     </div>
 
-                    I Windows så installerar du Hugin Messenger med exe filen och Linux installeras plånboken automatiskt,
-                    och öppnas sedan direkt när installationen är klar.
+                    I Windows så installerar du Hugin Messenger med exe filen.
+                    <br></br><br></br>
                     I OSX behöver du flytta hugin-messenger.app till Applikationer-mappen och
                     sen godkänna applikationen i säkerhetsinställningar för att kunna köra den.
                 </div>
