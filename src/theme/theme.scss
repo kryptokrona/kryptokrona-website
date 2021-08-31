@@ -3,11 +3,14 @@
 
 $text-color: white;
 $title-color: white;
+$hover-color: grey;
+$background-darkmode: #222222;
+$light-background-darkmode: #303030;
 
 
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: #222222;
+  background-color: $background-darkmode;
   margin-top: 78px;
   padding: 0px
 }
@@ -21,7 +24,7 @@ body {
 }
 
 .bg-dark {
-  background-color: #222222;
+  background-color: $background-darkmode;
 }
 
 .bg-light {
@@ -31,7 +34,7 @@ body {
 // Navbar
 
 .show {
-  background: #222222d8!important;
+  background: #222222d8 !important;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
@@ -44,7 +47,7 @@ body {
   z-index: 1000;
   width: 100%;
   height: 78px;
-  background: #222222d8!important;
+  background: #222222d8 !important;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
@@ -132,7 +135,7 @@ footer {
 }
   
 .bg-dark {
-  background-color: #222222 !important;
+  background-color: $background-darkmode !important;
 }
 
 .bottom {
@@ -151,7 +154,7 @@ a {
   text-decoration: none;
   color: $text-color;
   :hover {
-    color: grey;
+    color: $hover-color;
   }
 }
 
@@ -248,8 +251,8 @@ p {
   z-index: 999;
   margin: 0;
   text-align: center;
-  color: white;
-  background-color: rgba(128, 128, 128, 0.486)!important;
+  color: $text-color;
+  background-color: rgba(128, 128, 128, 0.486) !important;
   border: none;
   border-radius: 0rem;
 }
@@ -258,3 +261,71 @@ p {
 .alertLink {
   text-decoration: underline;
 }
+
+
+//Hugin components
+
+.hugin-structure{
+  background-color: $light-background-darkmode;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hugin-title{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hugin-introduction-section{  
+  background-color: #222222d8;
+  margin-top: 3rem;
+  color: $title-color;
+  width: 500px;
+  padding: 1rem;
+  border-radius: 5px;
+  margin:1rem;
+}
+
+.meet-hugin{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.tutorial1, .tutorial2, .tutorial3, .tutorial4{
+  margin-top: 1rem;
+}
+
+.hugin-installation-section{  
+  background-color: #222222d8;
+  margin-top: 3rem;
+  color: $title-color;
+  width: 500px;
+  padding: 1rem;
+  border-radius: 5px;
+  margin:1rem;
+}
+
+.hugin-tutorial-section{  
+  background-color: #222222d8;
+  margin-top: 3rem;
+  color: $title-color;
+  width: 500px;
+  padding: 1rem;
+  border-radius: 5px;
+  margin:1rem;
+}
+
+.hugin-get-address-section{  
+  background-color: #222222d8;
+  margin-top: 3rem;
+  color: $title-color;
+  width: 500px;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  margin:1rem;
+}
+
