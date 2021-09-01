@@ -354,4 +354,15 @@ h1, h2, h3, h4, h5, p {
 }
 
 
+//Downloads
+
+.download-buttons{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;  
+}
+
+#download-buttons{  
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
