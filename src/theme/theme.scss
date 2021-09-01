@@ -368,3 +368,19 @@ p {
   margin-left: 2rem;
   margin-right: 2rem;
 }
+
+
+@media screen and (max-width:480px) {
+
+  .blockchain-banner{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blockchain-data{
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+}
