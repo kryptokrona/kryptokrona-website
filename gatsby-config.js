@@ -5,8 +5,14 @@ module.exports = {
     DEV_SSR: true
   },
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "kryptokrona-website",
+    title: "Kryptokrona",
+    titleTemplate: "Kryptokrona",
+    description:
+      "En nordisk kryptovaluta för framtiden",
+    siteUrl: "https://www.kryptokrona.se",
+    url: "https://www.kryptokrona.se",
+    image: "/images/xkrsymbol.png", 
+    twitterUsername: "@Kryptokrona",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",

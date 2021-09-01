@@ -5,10 +5,12 @@ import HuginIntro from '../components/hugin/Introduction';
 import HuginDownload from '../components/hugin/Download';
 import HuginTutorial from '../components/hugin/Tutorial';
 import HuginGetAddress from '../components/hugin/GetAddress';
+import Seo from "../components/seo"
 
 const HuginPage = () => {
     return(
         <Layout>
+            <Seo></Seo>
             <PageHeader pageTitle='Hugin Messenger' pageText='This is our messenger' emoji='🔥' />
             <div className='hugin-structure'>                    
             <HuginIntro></HuginIntro>
