@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import { Link } from 'gatsby'
-import xkrlogo from '../images/logo.png'
+import xkrlogo from '../images/logo-white.png'
 
 const Menubar = () => {
     return(
-      <Navbar  expand="lg">
+      <Navbar expand="lg">
   <Container>
     <Navbar.Brand>
       <Link to='/'>
