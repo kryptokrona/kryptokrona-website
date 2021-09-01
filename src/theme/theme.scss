@@ -217,16 +217,24 @@ p {
         opacity: 0;
       }
 }
-  
+
+//StatusBar  
   
 .status {
     height: auto;
     padding: 2rem;
+    margin: 0;
     margin-bottom: 1rem;
+    background-color:#222222a4 !important;
     color: rgb(255, 255, 255);
     border: none;
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
+}
+
+.status-info{
+  color: rgb(119, 119, 119);
+  margin:0;
 }
   
 .card {
@@ -349,49 +357,4 @@ p {
   padding: 1rem;
   display: flex;
   flex-direction: row;
-}
-
-.blockchain-banner{
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.blockchain-data{
-  display: flex;
-  flex-direction: row;
-  margin: 1rem;
-  color: white;
-}
-
-.blockchain-data-info{
-  color: rgb(119, 119, 119);
-  margin-right: 2rem;
-  margin-left: 1rem;
-}
-
-.blockchain-data-output{
-  color: $text-color;
-}
-
-
-@media screen and (max-width:480px) {
-
-  .blockchain-banner{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .blockchain-data{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .blockchain-data-info{
-    margin:0rem !important;
-  }
-  
-
 }
