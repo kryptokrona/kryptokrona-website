@@ -1,7 +1,7 @@
 ---
-slug: "/posts/mining"
+slug: "/posts/node"
 date: "2021-09-01"
-title: "Start mining"
+title: "Run a Node"
 ---
 
 ### Step 1
