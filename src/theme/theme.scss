@@ -209,7 +209,7 @@ p {
 }
   
 .blinkMe {
-    animation: blinker 2s linear infinite;
+    animation: blinker 5s linear infinite;
 }
     
 @keyframes blinker {
@@ -234,8 +234,13 @@ p {
 
 .status-info{
   color: rgb(119, 119, 119);
-  margin:0;
+  margin: 0;
 }
+
+.satus-info > .react-icons{
+  color: black;
+}
+
   
 .card {
     height: 100%;

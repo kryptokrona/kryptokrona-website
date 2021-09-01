@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Container } from 'react-bootstrap'
 import fetch from 'node-fetch'
+import { RiRecordCircleLine } from "@react-icons/all-files/ri/RiRecordCircleLine";
 
 const Statusbar = () => {
     // get data from Blocksum api
@@ -24,8 +25,8 @@ const Statusbar = () => {
         <Container className='mb-5'>
             <div class="row status bg-dark">
                 <div class="col-sm text-start">
-                    <p className="status-info">Status</p>
-                    <i className="bi-record-fill p-2 text-warning blinkMe"></i></div>
+                    <p className="status-info">Status</p><div className="blinkMe">
+                    <RiRecordCircleLine color="#35a10b" fontSize="1em"></RiRecordCircleLine></div></div>
                 <div className="col-sm text-start">
                     <p className="status-info">Height</p><span id="height"></span></div>
                 <div className="col-sm text-start">
