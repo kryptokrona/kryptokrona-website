@@ -10,7 +10,7 @@ const LandingHugin = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md">
-                        <div className="card-hugin">
+                        <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title"><span className="p-2">🔐</span>Privacy</h5>
                                 <p className="card-text py-2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio saepe iusto illo. Hic, porro nam?</p>
@@ -18,7 +18,7 @@ const LandingHugin = () => {
                         </div>
                     </div>
                     <div className="col-md">
-                        <div className="card-hugin">
+                        <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title"><span className="p-2">🔗</span>Decentralized</h5>
                                 <p className="card-text p-2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio saepe iusto illo. Hic, porro nam?</p>
@@ -26,7 +26,7 @@ const LandingHugin = () => {
                         </div>
                     </div>
                     <div className="col-md">
-                        <div className="card-hugin">
+                        <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title"> <span className="p-2">✊</span>Resistant</h5>
                                 <p className="card-text p-2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio saepe iusto illo. Hic, porro nam?</p>
@@ -35,7 +35,7 @@ const LandingHugin = () => {
                     </div>
                 </div>
                 <div className="col-md">
-                    <div className="card-hugin" id="extra-margin-top">
+                    <div className="card" id="extra-margin-top">
                         <div className="card-body d-flex">
                             <div className="test">
                                 <h5 className="card-title"><span className="p-2">🛰️</span>Communicate</h5>
@@ -48,7 +48,7 @@ const LandingHugin = () => {
                     </div>
                 </div>
                 <div className="col-md">
-                    <div className="card-hugin">
+                    <div className="card">
                         <div className="card-body">
                             <h5 className="card-title"> <span className="p-2"></span>Download</h5>
                             <div className='hugin-download-buttons'>

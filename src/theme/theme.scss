@@ -1,8 +1,9 @@
 // TODO
-//Add light theme
 
+//Dark theme
 $text-color: white;
 $title-color: white;
+$title-color-light: Black;
 $hover-color: grey;
 $background-darkmode: #222222;
 $light-background-darkmode: #303030;
@@ -28,7 +29,7 @@ body {
 }
 
 .bg-light {
-  background-color: #303030!important;
+  background-color: $light-background-darkmode!important;
 }
 
 // Navbar
@@ -255,7 +256,7 @@ p {
     margin-bottom: 1rem;
     color: rgb(255, 255, 255);
     border: none;
-    background: #222222a4 !important;
+    background: $background-darkmode;
     overflow: visible;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -287,19 +288,6 @@ p {
 
 //Hugin
 
-.card-hugin{
-  height: 100%;
-    padding: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: rgb(255, 255, 255);
-    border: none;
-    background: #222222a4 !important;
-    overflow: visible;
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-}
-
 .hugin-download-buttons{
   padding: 1rem;
   display: flex;
@@ -319,5 +307,51 @@ p {
   #hugin-art{
     display: none;
   }
+
+}
+
+
+// Lightmode
+$text-color-lightmode: black!important;
+$title-color-lightmode: black !important;
+$background-lightmode: #fff7eb!important;
+$light-background-lightmode: #ffffff!important;
+$navbar-background-lightmode: #fff7ebd8!important;
+$button-border-color: black!important;
+
+@media (prefers-color-scheme: light) {
+  
+body {
+  background-color: $background-lightmode;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: 'Montserrat', sans-serif;
+  color: $title-color-lightmode;
+}
+
+.bg-dark {
+  background-color: $background-lightmode;
+}
+
+.bg-light {
+  background-color: $light-background-lightmode;
+}
+
+.navbar {
+  background-color: $navbar-background-lightmode;
+}
+
+.card {
+  background-color: $background-lightmode;
+}
+
+.btn {
+  margin-right: 1rem;
+  background-color: transparent;
+  border-color: $button-border-color;
+  color: $text-color-lightmode;
+}
+
 
 }

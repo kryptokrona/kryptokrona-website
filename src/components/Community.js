@@ -5,7 +5,7 @@ import OutButton from './OutButton';
 
 const Community = () => {
     return(
-        <section className='rgb py-5'>
+        <section className='bg-light py-5'>
             <Container className='mb-5'>
                 <Row className=''>
                     <Col className='col-lg mt-4'>
