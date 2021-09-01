@@ -19,11 +19,11 @@ const DownloadInfo = () => {
                                 <h5 className="card-title"><span className="p-2">🖥️</span> Desktop Wallet</h5>
                                 <p className="cart-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde earum, vitae, dolores odit deleniti voluptatibus corrupti amet fuga, maiores non culpa expedita! Esse eius doloribus dignissimos minus aut asperiores!</p>
                                 <div className='download-buttons'>
-                                    <a href='https://github.com/kryptokrona/kryptokrona-desktop-wallet/releases/download/v0.1.1/Kryptokrona-wallet-Setup-0.1.1.exe' aria-label="github" target="_blank" rel="noreferrer">
+                                    <a href='https://github.com/kryptokrona/kryptokrona-desktop-wallet/releases/download/v0.1.1/Kryptokrona-wallet-Setup-0.1.1.exe' aria-label="github" target="_blank" rel="noreferrer" id="download-buttons">
                                         <h4><FaWindows /></h4></a>
-                                    <a href='https://github.com/kryptokrona/kryptokrona-desktop-wallet/releases/download/v0.1.1/Kryptokrona-wallet-0.1.1.dmg' aria-label="github" target="_blank" rel="noreferrer">
+                                    <a href='https://github.com/kryptokrona/kryptokrona-desktop-wallet/releases/download/v0.1.1/Kryptokrona-wallet-0.1.1.dmg' aria-label="github" target="_blank" rel="noreferrer" id="download-buttons">
                                         <h4><FaApple /></h4></a>
-                                    <a href='https://github.com/kryptokrona/kryptokrona-desktop-wallet/releases/download/v0.1.1/Kryptokrona-wallet-0.1.1.AppImage' aria-label="github" target="_blank" rel="noreferrer">
+                                    <a href='https://github.com/kryptokrona/kryptokrona-desktop-wallet/releases/download/v0.1.1/Kryptokrona-wallet-0.1.1.AppImage' aria-label="github" target="_blank" rel="noreferrer" id="download-buttons">
                                         <h4><FaLinux /></h4></a>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@ const DownloadInfo = () => {
                                 <h5 className="card-title"><span className="p-2">📲</span>  Android Wallet</h5>
                                 <p className="cart-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde earum, vitae, dolores odit deleniti voluptatibus corrupti amet fuga, maiores non culpa expedita! Esse eius doloribus dignissimos minus aut asperiores!</p>
                                 <div className='download-buttons'>
-                                    <a href='https://play.google.com/store/apps/details?id=com.xkr&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' aria-label="github" target="_blank" rel="noreferrer">
+                                    <a href='https://play.google.com/store/apps/details?id=com.xkr&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' aria-label="github" target="_blank" rel="noreferrer" id="download-buttons">
                                         <h4><FaAndroid /></h4></a>
                                 </div>
                             </div>
