@@ -9,11 +9,10 @@ import HuginGetAddress from '../components/hugin/GetAddress';
 const HuginPage = () => {
     return(
         <Layout>
-            {/* <PageHeader pageTitle='Hugin Messenger' pageText='This is our messenger' emoji='🔥' /> */}
+            <PageHeader pageTitle='Hugin Messenger' pageText='This is our messenger' emoji='🔥' />
             <div className='hugin-structure'>                    
             <HuginIntro></HuginIntro>
             <HuginDownload></HuginDownload>
-            
             <HuginTutorial></HuginTutorial>
             <HuginGetAddress></HuginGetAddress>
             </div>

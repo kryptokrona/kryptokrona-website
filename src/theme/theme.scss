@@ -79,8 +79,12 @@ a.navLink {
     margin-top: 1rem;
   }
 
+  //nav-bar mobile style
+
   .navbar-collapse{
+    background-color: $background-darkmode !important;
     padding:2rem;
+    margin-top: 2rem;
   }
 
 }
