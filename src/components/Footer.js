@@ -13,19 +13,19 @@ const Footer = () => {
         <footer>
             <img src={xkrsymbol} height='24' className='footersymbol' alt='' />
             <div>
-                <a href=''><Button variant='outline-light'><i></i>Edit Page</Button></a>
+                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><Button variant='outline-light'><i></i>Edit Page</Button></a>
                 <p className='copyright'>©Kryptokrona 2021</p>
-                <a href='' aria-label="github" target="_blank" rel="noreferrer" id="footer-icon">
+                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="github" target="_blank" rel="noreferrer" id="footer-icon">
                     <FaGithub /></a>
-                <a href='' aria-label="Discord" target="_blank" rel="noreferrer" id="footer-icon">
+                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="Discord" target="_blank" rel="noreferrer" id="footer-icon">
                     <FaDiscord /></a>
-                <a href='' aria-label="telegram" target="_blank" rel="noreferrer" id="footer-icon">
+                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="telegram" target="_blank" rel="noreferrer" id="footer-icon">
                     <FaTelegram /></a>
-                <a href='' aria-label="twitter" target="_blank" rel="noreferrer" id="footer-icon">
+                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="twitter" target="_blank" rel="noreferrer" id="footer-icon">
                     <FaTwitter /></a>
-                <a href='' aria-label="reddit" target="_blank" rel="noreferrer" id="footer-icon">
+                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="reddit" target="_blank" rel="noreferrer" id="footer-icon">
                     <FaReddit /></a>
-                <a href='' aria-label="youtube" target="_blank" rel="noreferrer" id="footer-icon">
+                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="youtube" target="_blank" rel="noreferrer" id="footer-icon">
                     <FaYoutube /></a>
             </div>
         </footer>

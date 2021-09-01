@@ -30,7 +30,7 @@ const GetStarted = () => {
                         <div className='card-body'>
                             <h5><span class="p-2">⛏️</span>Mining</h5>
                             <p>Neither bank, authorities or friends can see your assets or your transactions. Protect your privacy and rights.</p>
-                            <InButton linkTo='/Mining' buttonText='Lets go!'/>
+                            <InButton linkTo='/posts/mining' buttonText='Lets go!'/>
                         </div>
                         </Card>
                     </Col>
