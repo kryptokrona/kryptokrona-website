@@ -30,7 +30,7 @@ const GetStarted = () => {
                         <div className='card-body'>
                             <h5><span class="p-2">⛏️</span>Mining</h5>
                             <p>Neither bank, authorities or friends can see your assets or your transactions. Protect your privacy and rights.</p>
-                            <InButton linkTo='/Mining' buttonText='Lets go!'/>
+                            <InButton linkTo='/mining' buttonText='Lets go!'/>
                         </div>
                         </Card>
                     </Col>
@@ -50,7 +50,7 @@ const GetStarted = () => {
                         <div className='card-body'>
                             <h5><span class="p-2">📖</span>Guides & docs</h5>
                             <p>Our source code is open for everyone to view and our community is open for anyone interested. Come join us!</p>
-                            <InButton linkTo='/docs' buttonText='Dive deeper'/>
+                            <InButton linkTo='/posts/node' buttonText='Dive deeper'/>
                         </div>
                         </Card>
                     </Col>

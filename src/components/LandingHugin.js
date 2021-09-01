@@ -56,7 +56,7 @@ const LandingHugin = () => {
                                     <h1><FaWindows></FaWindows></h1></a>
                                 <a href='https://github.com/kryptokrona/hugin-messenger/releases/download/v0.3.3/HuginMessenger-0.3.3.dmg' aria-label="github" target="_blank" rel="noreferrer">
                                     <h1><FaApple></FaApple></h1></a>
-                                <a href='' aria-label="github" target="_blank" rel="noreferrer">
+                                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="github" target="_blank" rel="noreferrer">
                                     <h1><FaLinux></FaLinux></h1></a>
                             </div>
                         </div>

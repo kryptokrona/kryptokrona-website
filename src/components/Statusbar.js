@@ -23,8 +23,8 @@ const Statusbar = () => {
 
     return (
         <Container className='mb-5'>
-            <div class="row status bg-dark">
-                <div class="col-sm text-start">
+            <div className="row status bg-dark">
+                <div className="col-sm text-start">
                     <p className="status-info">Status</p><div className="blinkMe">
                     <RiRecordCircleLine color="#35a10b" fontSize="1em"></RiRecordCircleLine></div></div>
                 <div className="col-sm text-start">
