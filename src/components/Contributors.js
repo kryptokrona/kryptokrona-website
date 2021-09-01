@@ -17,8 +17,8 @@ const Contributors = () => {
                         <img src='https://avatars1.githubusercontent.com/u/36674091?v=4' width='60px' alt=''/></a><br/>
                 </div>
                 <div className='text-center'>
-                    <a href='https://github.com/swepool'>
-                        <img src='https://avatars1.githubusercontent.com/u/36674091?v=4' width='60px' alt=''/></a><br/>
+                    <a href='https://github.com/ux33-331'>
+                        <img src='https://avatars.githubusercontent.com/u/61588635?v=4' width='60px' alt=''/></a><br/>
                 </div>
             </div>
         </Container>
