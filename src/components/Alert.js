@@ -9,19 +9,19 @@ import '../theme/theme.scss'
 
 
 function AlertBanner() {
-    const [show, setShow] = useState(true);
-  
-    if (show) {
-      return (
-            <Alert variant="danger" onClose={() => setShow(false)} dismissible>
-                <h6><span class="p-2">&#128172;</span>New wallet update! <a className='alertLink' href='https:/github.com'>Download</a></h6>
-            </Alert>
+  const [show, setShow] = useState(true);
 
-      );
-    }
-    return AlertBanner;
+  if (show) {
+    return (
+          <Alert variant="danger">
+              <h6><span class="p-2">&#128172;</span>New wallet update! <a className='alertLink' href='https:/github.com'>Download</a></h6>
+          </Alert>
+
+    );
   }
-  
-  render(<Container><AlertBanner/></Container>);
+  return AlertBanner;
+}
+
+render(<Container><AlertBanner/></Container>);
 
 export default AlertBanner
