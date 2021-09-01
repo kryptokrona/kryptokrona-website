@@ -9,7 +9,7 @@ import '../theme/theme.scss'
 
 
 function AlertBanner() {
-  const [show, setShow] = useState(true);
+  const [show] = useState(true);
 
   if (show) {
     return (

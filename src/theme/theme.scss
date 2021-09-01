@@ -310,13 +310,12 @@ p {
 
 }
 
-
 // Lightmode
 $text-color-lightmode: black!important;
 $title-color-lightmode: black !important;
-$background-lightmode: #fff7eb!important;
+$background-lightmode: #eeeeee!important;
 $light-background-lightmode: #ffffff!important;
-$navbar-background-lightmode: #fff7ebd8!important;
+$navbar-background-lightmode: #eeeeeed8!important;
 $button-border-color: black!important;
 
 @media (prefers-color-scheme: light) {
@@ -351,6 +350,7 @@ h1, h2, h3, h4, h5, p {
   background-color: transparent;
   border-color: $button-border-color;
   color: $text-color-lightmode;
+}
 }
 
 
