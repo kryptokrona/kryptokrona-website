@@ -1,13 +1,12 @@
 import * as React from 'react'
-import { Row } from 'react-bootstrap'
+import { graphql, useStaticQuery } from "gatsby"
 import { useState, useEffect } from "react"
-
-//Not finished... how the F do I use Fetch here lol
+import { Card, Container } from 'react-bootstrap'
+import fetch from 'node-fetch'
 
 const Statusbar = () => {
-
-    const [Hashrate, Height, Nodes, Transactions] = useState(0)
-    useEffect(() => {
+    // const [Hashrate, Height, Nodes, Transactions] = useState(0)
+    
         // get data from Blocksum api
         fetch(`https://blocksum.org/api/getinfo`)
             .then(response => response.json()) // parse JSON from request
@@ -18,17 +17,26 @@ const Statusbar = () => {
                 document.getElementById('nodes').innerHTML = data.grey_peerlist_size
                 document.getElementById('tx').innerHTML = data.tx_count
             })
-    }, [])
+   
 
-    return(
-        <div className='blockchain-banner'>
-            <div className="blockchain-data">
-                Hashrate: <p id="hashrate">{Hashrate}</p>
-                Height: <p id="height">{Height}</p>
-                Nodes: <p id="nodes">{Nodes}</p>
-                TX: <p id="tx">{Transactions}</p>
-            </div>
-        </div>
+    return (
+        <Container className='mb-5'>
+            <Card>
+                <div className='blockchain-banner'>
+                    <div className="blockchain-data">
+                        <p className="blockchain-data-info">Hashrate:</p>
+                        <p className="blockchain-data-output" id="hashrate"></p>
+                        <p className="blockchain-data-info">Height:</p>
+                        <p className="blockchain-data-output" id="height"></p>
+                        <p className="blockchain-data-info">Nodes:</p>
+                        <p className="blockchain-data-output" id="nodes"></p>
+                        <p className="blockchain-data-info">TX:</p>
+                        <p className="blockchain-data-output" id="tx"></p>
+                    </div>
+                </div>
+
+            </Card>
+        </Container>
 
     )
 }

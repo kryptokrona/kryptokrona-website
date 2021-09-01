@@ -366,9 +366,14 @@ p {
   color: white;
 }
 
-.blockchain-data > p{
-  margin-left: 2rem;
+.blockchain-data-info{
+  color: rgb(119, 119, 119);
   margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+.blockchain-data-output{
+  color: $text-color;
 }
 
 
@@ -382,6 +387,10 @@ p {
   .blockchain-data{
     display: flex;
     flex-direction: column;
+  }
+
+  .blockchain-data-info{
+    margin:0rem !important;
   }
   
 

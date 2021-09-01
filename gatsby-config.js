@@ -60,13 +60,13 @@ module.exports = {
         }
       },
     },
-    {
-      resolve: `gatsby-source-graphql`,
-      options: {
-        typeName: `Blocksum`,
-        fieldName: `Blocksum`,
-        url: `https://blocksum.org/api/getinfo`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-graphql`,
+    //   options: {
+    //     typeName: `Blocksum`,
+    //     fieldName: `Blocksum`,
+    //     url: `https://blocksum.org/api/getinfo `,
+    //   },
+    // },
   ],
 };
