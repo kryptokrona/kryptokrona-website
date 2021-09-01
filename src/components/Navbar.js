@@ -9,7 +9,7 @@ const Menubar = () => {
   <Container>
     <Navbar.Brand>
       <Link to='/'>
-      <img src={xkrlogo} alt="Logo" height='30'/>
+      <img src={xkrlogo} className='logo' alt="Logo" height='30'/>
       </Link>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
