@@ -283,8 +283,6 @@ p {
 }
 
 .hugin-introduction-section{  
-  background-color: #222222d8;
-  margin-top: 3rem;
   color: $title-color;
   padding: 1rem;
   border-radius: 5px;
@@ -302,8 +300,6 @@ p {
 }
 
 .hugin-installation-section{  
-  background-color: #222222d8;
-  margin-top: 3rem;
   color: $title-color;
   padding: 1rem;
   border-radius: 5px;
@@ -317,6 +313,15 @@ p {
   height: 200px;
 }
 
+@media screen and (max-width:480px) {
+
+  .xkrPc{
+    display: none;
+  }
+  
+
+}
+
 .hugin-box-img{
   display: flex;
   justify-content: center;
@@ -325,7 +330,6 @@ p {
 }
 
 .hugin-tutorial-section{  
-  background-color: #222222d8;
   margin-top: 3rem;
   color: $title-color;
   padding: 1rem;
@@ -333,9 +337,7 @@ p {
   margin:1rem;
 }
 
-.hugin-get-address-section{  
-  background-color: #222222d8;
-  margin-top: 3rem;
+.hugin-get-address-section{ 
   color: $title-color;
   padding: 1rem;
   border-radius: 5px;

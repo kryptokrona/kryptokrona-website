@@ -1,7 +1,10 @@
 import * as React from 'react'
+import { Card, Container } from 'react-bootstrap'
 
 const HuginTutorial = (props) => {
     return (
+        <Container className='mb-5'>
+            <Card>
         <div className='hugin-tutorial-section'>
             <div className='hugin-title'>Tutorial</div>
 
@@ -33,6 +36,8 @@ const HuginTutorial = (props) => {
                 Sen är det bara att chatta på!
             </div>
         </div>
+        </Card>
+        </Container>
 
     )
 }
