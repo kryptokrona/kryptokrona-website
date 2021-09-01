@@ -3,12 +3,15 @@ import Layout from '../components/Layout';
 import Information from '../components/Information';
 import Landing from '../components/Landing';
 import Contributors from '../components/Contributors';
+import Statusbar from '../components/Statusbar';
 const Homepage = () => {
-    return(
+    return (
+
         <Layout>
-            <Landing/>
-            <Information/>
-            <Contributors/>
+            <Landing />
+            <Statusbar></Statusbar>
+            <Information />
+            <Contributors />          
         </Layout>
     )
 }

@@ -349,3 +349,22 @@ p {
   flex-direction: row;
 }
 
+.blockchain-banner{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockchain-data{
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  color: white;
+}
+
+.blockchain-data > p{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
