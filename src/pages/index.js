@@ -9,11 +9,9 @@ const Homepage = () => {
     return (
 
         <Layout>
-            <Seo></Seo>
+            <Seo/>
             <Landing />
-            
             <Information />
-            
             <Contributors />          
         </Layout>
     )

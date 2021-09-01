@@ -285,87 +285,39 @@ p {
   text-decoration: underline;
 }
 
+//Hugin
 
-//Hugin components
-
-.hugin-structure{
-  background-color: $light-background-darkmode;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hugin-title{
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.hugin-introduction-section{  
-  color: $title-color;
-  padding: 1rem;
-  border-radius: 5px;
-  margin:1rem;
-}
-
-.meet-hugin{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.tutorial1, .tutorial2, .tutorial3, .tutorial4{
-  margin-top: 1rem;
-}
-
-.hugin-installation-section{  
-  color: $title-color;
-  padding: 1rem;
-  border-radius: 5px;
-  margin:1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.xkrPc{
-  height: 200px;
-}
-
-@media screen and (max-width:480px) {
-
-  .xkrPc{
-    display: none;
-  }
-  
-
-}
-
-.hugin-box-img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 3rem;
-}
-
-.hugin-tutorial-section{  
-  margin-top: 3rem;
-  color: $title-color;
-  padding: 1rem;
-  border-radius: 5px;
-  margin:1rem;
-}
-
-.hugin-get-address-section{ 
-  color: $title-color;
-  padding: 1rem;
-  border-radius: 5px;
-  margin-bottom: 2rem;
-  margin:1rem;
+.card-hugin{
+  height: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    background: #222222a4 !important;
+    overflow: visible;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
 }
 
 .hugin-download-buttons{
   padding: 1rem;
   display: flex;
   flex-direction: row;
+}
+
+#hugin-art{
+  width: 500px;
+}
+
+#extra-margin-top{
+  margin-top: 2rem!important;
+}
+
+@media screen and (max-width:480px) {
+
+  #hugin-art{
+    display: none;
+  }
+
 }

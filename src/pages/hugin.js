@@ -1,10 +1,7 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
-import HuginIntro from '../components/hugin/Introduction';
-import HuginDownload from '../components/hugin/Download';
-import HuginTutorial from '../components/hugin/Tutorial';
-import HuginGetAddress from '../components/hugin/GetAddress';
+import LandingHugin from '../components/LandingHugin';
 import Seo from "../components/seo"
 
 const HuginPage = () => {
@@ -12,12 +9,7 @@ const HuginPage = () => {
         <Layout>
             <Seo></Seo>
             <PageHeader pageTitle='Hugin Messenger' pageText='This is our messenger' emoji='🔥' />
-            <div className='hugin-structure'>                    
-            <HuginIntro></HuginIntro>
-            <HuginDownload></HuginDownload>
-            <HuginTutorial></HuginTutorial>
-            <HuginGetAddress></HuginGetAddress>
-            </div>
+            <LandingHugin />
         </Layout>
     )
 }
