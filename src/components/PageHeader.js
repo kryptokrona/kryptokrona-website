@@ -5,7 +5,7 @@ const PageHeader = ({pageTitle, pageText, emoji}) => {
     return(
         <Container className='py-5 bg-dark'>
             <div>
-            <h1>{pageTitle}<span class="p-2"> {emoji}</span></h1>
+            <h1>{pageTitle}<span className="p-2"> {emoji}</span></h1>
             <p>{pageText}</p>  
             </div>
         </Container>

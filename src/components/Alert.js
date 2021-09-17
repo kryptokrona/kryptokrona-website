@@ -14,7 +14,7 @@ function AlertBanner() {
   if (show) {
     return (
           <Alert variant="danger">
-              <h6><span class="p-2">&#128172;</span>New wallet update! <a className='alertLink' href='https:/github.com'>Download</a></h6>
+              <h6><span className="p-2">&#128172;</span>New wallet update! <a className='alertLink' href='https:/github.com'>Download</a></h6>
           </Alert>
 
     );

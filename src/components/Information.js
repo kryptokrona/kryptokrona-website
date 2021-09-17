@@ -46,7 +46,7 @@ const Information = () => {
                     <Col className='col-lg mt-4'>
                         <Card>
                         <div className='card-body'>
-                            <h5><span class="p-2">&#128173;</span>Open-source</h5>
+                            <h5><span className="p-2">&#128173;</span>Open-source</h5>
                             <p>Our source code is open for everyone to view and our community is open for anyone interested. Come join us!</p>
                         </div>
                         </Card>
