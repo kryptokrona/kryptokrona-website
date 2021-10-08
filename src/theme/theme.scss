@@ -32,6 +32,25 @@ body {
   background-color: $light-background-darkmode!important;
 }
 
+// Text elements
+  
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+  color: $title-color;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  :hover {
+    color: $hover-color;
+  }
+}
+
+p {
+    color: $text-color;
+}
+
 // Navbar
 
 .show {
@@ -53,12 +72,11 @@ body {
   backdrop-filter: saturate(180%) blur(20px);
 }
 
-
 .navbar-toggler-icon {
   border-color: white;
 }
 
-a.navLink {
+a.navLink { 
   margin-right: 1rem;
 
   :hover {
@@ -90,7 +108,6 @@ a.navLink {
 
 }
 
-
 //Landing
 
 .art {
@@ -104,13 +121,6 @@ a.navLink {
   padding-right:0.5rem;
   margin-top: 2rem;
 }
-
-//Information cards
-
-.information {
-  margin-top: 3rem;
-}
-
 
 //Footer
 
@@ -150,27 +160,6 @@ footer {
   position: absolute;
   bottom:   1.5rem;
 }
-
-// General text elements
-  
-h1, h2, h3, h4, h5 {
-  font-family: 'Montserrat', sans-serif;
-  color: $title-color;
-}
-
-a {
-  text-decoration: none;
-  color: $text-color;
-  :hover {
-    color: $hover-color;
-  }
-}
-
-p {
-    color: $text-color;
-}
-
-
   
 // Animations
 
@@ -222,7 +211,26 @@ p {
       }
 }
 
-//StatusBar  
+ // Alert
+
+ .alert {
+  height: 3.5rem;
+  position: relative;
+  z-index: 999;
+  margin: 0;
+  text-align: center;
+  color: $text-color;
+  background-color: rgba(128, 128, 128, 0.486) !important;
+  border: none;
+  border-radius: 0rem;
+}
+
+
+.alertLink {
+  text-decoration: underline;
+}
+
+// Statusbar  
   
 .status {
     height: auto;
@@ -245,7 +253,8 @@ p {
   color: black;
 }
 
-  
+// Cards
+
 .card {
     height: 100%;
     padding: 1rem;
@@ -264,26 +273,20 @@ p {
   grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
  } 
 
- // Alert
+// Downloads
 
-.alert {
-  height: 3.5rem;
-  position: relative;
-  z-index: 999;
-  margin: 0;
-  text-align: center;
-  color: $text-color;
-  background-color: rgba(128, 128, 128, 0.486) !important;
-  border: none;
-  border-radius: 0rem;
+.download-buttons{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;  
 }
 
-
-.alertLink {
-  text-decoration: underline;
+#download-buttons{  
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-//Hugin
+// Hugin
 
 .hugin-download-buttons{
   padding: 1rem;
@@ -308,6 +311,7 @@ p {
 }
 
 // Lightmode
+
 $text-color-lightmode: black!important;
 $title-color-lightmode: black !important;
 $background-lightmode: #eeeeee!important;
@@ -348,18 +352,4 @@ h1, h2, h3, h4, h5, p {
   border-color: $button-border-color;
   color: $text-color-lightmode;
 }
-}
-
-
-//Downloads
-
-.download-buttons{
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;  
-}
-
-#download-buttons{  
-  padding-right: 1rem;
-  padding-left: 1rem;
 }
