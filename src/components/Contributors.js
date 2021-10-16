@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Container } from 'react-bootstrap'
+import Community from './Community';
 
 
 //Add contributors to site, 
@@ -9,7 +10,7 @@ const Contributors = () => {
         <Container className='mt-5'>
             <div>
                 <h1>Contributors</h1>
-                <p>Kryptokrona is an open-sourced project. </p>
+                <p>This project is open source and maintained by the Community. YYou can for example make changes to this site, suggest awesome new features, or help us squash bugs. Not a developer? No worries, there's tons of things to do!</p>
             </div>
             <div className='d-flex gap-5' width='1360px'>
                 <div className='text-center'>
