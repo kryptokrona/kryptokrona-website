@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Row, Col, Card, Container } from 'react-bootstrap'
 import Statusbar from '../components/Statusbar';
+import Community from './Community';
 
 
 const Information = () => {
@@ -38,24 +39,24 @@ const Information = () => {
                     <Col className='col-lg mt-4'>
                         <Card>
                             <div className='card-body'>
-                            <h5 className='card-title'><span className="p-2">&#128589;</span>It's yours</h5>
-                            <p className='card-text'>Not controlled by any company, foundation or individual. The coin distribution is designed to be as fair as possible.</p>
+                            <h5 className='card-title'>🔥 Mining</h5>
+                            <p className='card-text'>You can assist Kryptokrona. Through mining you can create Kryptokrona and store them wherever you want to.</p>
                             </div>
                         </Card>
                     </Col>
                     <Col className='col-lg mt-4'>
                         <Card>
                         <div className='card-body'>
-                            <h5><span className="p-2">&#128173;</span>Open-source</h5>
-                            <p>Our source code is open for everyone to view and our community is open for anyone interested. Come join us!</p>
+                            <h5><span className="p-2">💚</span>Community</h5>
+                            <p>Join a warm and welcoming community and get to know like-minded people. You can find us on various platforms including our own. </p>
                         </div>
                         </Card>
                     </Col>
                     <Col className='col-lg mt-4'>
                         <Card>
                         <div className='card-body'>
-                            <h5><span className="p-2">&#128274;</span>Privacy</h5>
-                            <p>Neither bank, authorities or friends can see your assets or your transactions. Protect your privacy and rights.</p>
+                            <h5><span className="p-2">😇</span>Support</h5>
+                            <p>You can get assistance with Kryptokrona, around the clock, every day of the week in our Discord server. Welcome for discussions.</p>
                         </div>
                         </Card>
                     </Col>
