@@ -8,7 +8,7 @@ const HuginPage = () => {
     return(
         <Layout>
             <Seo></Seo>
-            <PageHeader pageTitle='Hugin Messenger' pageText='This is our messenger' emoji='🔥' />
+            <PageHeader pageTitle='Hugin Messenger' pageText='' emoji='🔥' />
             <LandingHugin />
         </Layout>
     )

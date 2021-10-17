@@ -8,7 +8,7 @@ const Homepage = () => {
     return(
         <Layout>
             <Seo></Seo>
-            <PageHeader pageTitle='Community' pageText='Join the community and contribute to your future' emoji='❤️' />
+            <PageHeader pageTitle='Community' pageText='' emoji='❤️' />
             <Community/>
         </Layout>
     )

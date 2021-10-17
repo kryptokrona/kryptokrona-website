@@ -8,7 +8,7 @@ const StartedPage = () => {
     return(
         <Layout>
             <Seo></Seo>
-            <PageHeader pageTitle='Get Started' pageText='Heres everything you need to get started' emoji='🚀'/>
+            <PageHeader pageTitle='Get Started' pageText='' emoji='🚀'/>
             <GetStarted/>
         </Layout>
     )

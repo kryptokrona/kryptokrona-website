@@ -8,7 +8,7 @@ const DownloadPage = () => {
     return(
         <Layout>
             <Seo></Seo>
-            <PageHeader pageTitle='Downloads' pageText='Download and run' emoji='📡'/>
+            <PageHeader pageTitle='Downloads' pageText='' emoji='📡'/>
             <DownloadInfo />
         </Layout>
     )

@@ -3,12 +3,13 @@ import PageHeader from '../components/PageHeader';
 import Layout from '../components/Layout';
 import Seo from "../components/seo"
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import Statusbar from '../components/Statusbar';
 
 const InfoPage = () => {
     return(
         <Layout>
             <Seo></Seo>
-            <PageHeader pageTitle='Information' pageText='So you want to know more?' emoji='📚' />
+            <PageHeader pageTitle='Info' emoji='📚' />
             <section className='bg-light py-5'>
             <Container className='pt-5'>
                 <h1>Money for the future.</h1>
@@ -46,6 +47,7 @@ const InfoPage = () => {
                     </Col>
                 </Row>
             </Container>
+            <Statusbar/>
         </section>
         </Layout>
     )
