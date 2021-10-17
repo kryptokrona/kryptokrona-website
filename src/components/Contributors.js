@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Container } from 'react-bootstrap'
-import Community from './Community';
 
 
 //Add contributors to site, 

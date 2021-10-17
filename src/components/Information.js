@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Row, Col, Card, Container } from 'react-bootstrap'
 import Statusbar from '../components/Statusbar';
-import Community from './Community';
 
 
 const Information = () => {
