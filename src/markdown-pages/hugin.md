@@ -1,3 +1,9 @@
+---
+slug: "/posts/hugin"
+date: "2021-10-15"
+title: "Hugin Whitepaper"
+---
+
 # Hugin Messenger Whitepaper
 
 **Introduction**
