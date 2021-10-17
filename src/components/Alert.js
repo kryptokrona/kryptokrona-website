@@ -5,8 +5,7 @@ import render from 'dom-serializer'
 import '../theme/theme.scss'
 
 //Styled under //Alert in theme.scss
-//TODO Make it remember shit :P
-
+// Use useState(true) to show the alert and false to remove it.
 
 function AlertBanner() {
   const [show] = useState(true);
