@@ -28,15 +28,15 @@ const Statusbar = () => {
                     <p className="status-info">Status</p><div className="blinkMe">
                     <RiRecordCircleLine color="#35a10b" fontSize="1em"></RiRecordCircleLine></div></div>
                 <div className="col-sm text-start">
-                    <p className="status-info">Height</p><span id="height"></span></div>
+                    <p className="status-info">Height</p><span id="height">-</span></div>
                 <div className="col-sm text-start">
-                    <p className="status-info">Hashrate</p><span id="hashrate"></span></div>
+                    <p className="status-info">Hashrate</p><span id="hashrate">-</span></div>
                 <div className="col-sm text-start">
-                    <p className="status-info">Nodes</p><span id="nodes"></span></div>
+                    <p className="status-info">Nodes</p><span id="nodes">-</span></div>
                 <div className="col-sm text-start">
-                    <p className="status-info">Transactions</p><span id="tx"></span></div>
+                    <p className="status-info">Transactions</p><span id="tx">-</span></div>
                 <div className="col-sm text-start">
-                    <p className="status-info">Price</p><span id="price"></span></div>
+                    <p className="status-info">Price</p><span id="price">-</span></div>
             </div>
         </Container>
 

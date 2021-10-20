@@ -13,20 +13,16 @@ const Footer = () => {
         <footer>
             <img src={xkrsymbol} height='24' className='footersymbol' alt='' />
             <div>
-                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><Button variant='outline-light'><i></i>Edit Page</Button></a>
+                <a href='https://github.com/kryptokrona/kryptokrona-website'><Button variant='outline-light'><i></i>Edit Page</Button></a>
                 <p className='copyright'>©Kryptokrona 2021</p>
-                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="github" target="_blank" rel="noreferrer" id="footer-icon">
+                <a href='https://github.com/kryptokrona' aria-label="github" target="_blank" rel="noreferrer" id="footer-icon">
                     <FaGithub /></a>
-                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="Discord" target="_blank" rel="noreferrer" id="footer-icon">
+                <a href='https://chat.kryptokrona.se' aria-label="Discord" target="_blank" rel="noreferrer" id="footer-icon">
                     <FaDiscord /></a>
-                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="telegram" target="_blank" rel="noreferrer" id="footer-icon">
+                <a href='https://t.me/xkrofficial' aria-label="telegram" target="_blank" rel="noreferrer" id="footer-icon">
                     <FaTelegram /></a>
-                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="twitter" target="_blank" rel="noreferrer" id="footer-icon">
+                <a href='https://twitter.com/kryptokrona' aria-label="twitter" target="_blank" rel="noreferrer" id="footer-icon">
                     <FaTwitter /></a>
-                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="reddit" target="_blank" rel="noreferrer" id="footer-icon">
-                    <FaReddit /></a>
-                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' aria-label="youtube" target="_blank" rel="noreferrer" id="footer-icon">
-                    <FaYoutube /></a>
             </div>
         </footer>
     )
