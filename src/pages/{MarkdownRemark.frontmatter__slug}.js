@@ -4,6 +4,9 @@ import Layout from "../components/Layout"
 import PageHeader from "../components/PageHeader"
 import { Container } from "react-bootstrap"
 
+//To style the posts use post.scss
+import '../theme/post.scss'
+
 export default function Markdown({
   data, // this prop will be injected by the GraphQL query below.
 }) {

@@ -6,7 +6,11 @@ title: "Hugin Whitepaper"
 
 # Hugin Messenger Whitepaper
 
-**Introduction**
+<br/><br/>
+
+##### **[ Introduction ]**
+
+<br/>
 
 *Hugin Messenger is a decentralized private messenger and social network with native cryptocurrency payments. WIth it you can engage in secure communications and make untraceable transactions, all without any trusted parties.*
 
@@ -22,38 +26,51 @@ Decentralization also lends another important prerequisite for privacy, which is
 
 Another positive feature of decentralization is that it can make certain operations a lot less costly, and in turn more scalable. In Hugin Messenger, for example, you can make *true* peer-2-peer calls, where the data is only travelling between you, and your recipient. In a centralized system, that call would be relayed through a centralized server, costing the
 
-1 https://drewdevault.com/2018/08/08/Signal.html 
-2 https://signal.org/blog/looking-back-on-the-front/
-
 centralized entity valuable resources, in turn causing an incentive for it to profit off of the user’s interactions with their service. It is feasible that such calls are transcribed, analyzed, and hopefully anonymized, before being sold as data for profit. Hugin is immune to this race to make more profit, as server cost’s increase due to user base growth and data volume. This is achieved simply because the data is stored in the peer-2-peer network, the bulk of it only between the affected parties - such as in calls, file sharing and more.
 
 By being open source, users and experts can combine efforts to scrutinize the source code, making sure it’s safe and legitimate - a process that has been shown to create the most robust and reliable systems over the decades3.
 
 Hugin Messenger also lets you seamlessly send value transactions in combination with messages on the same protocol, without needless fragmentation or complexity - in other words; Hugin was born to be a combined messaging service and a tool for transacting money that puts privacy first.
+<br/>
+<br/>
+<br/>
 
 ## **Features**
 
-##### *Private messaging*
+<br/>
+
+##### [ Private messaging ]
 
 Hugin Messenger is a private messenger that uses military grade encryption to secure messages that are transmitted through the kryptokrona cryptocurrency peer-2-peer network.
 
 With the high security encryption used in Hugin Messenger, it is possible to send private, encrypted messages that can only be read by the sender and the recipient. There are no middlemen that keep any master keys, so there is no way of anyone eavesdropping.
+<br/>
+<br/>
 
-##### *Private video and voice calls*
+##### [ Private video and voice calls ]
 
 With Hugin Messenger, you can make private peer-to-peer video and voice calls that often beat mainstream services in terms of video and audio quality, as well as in privacy.
+<br/>
+<br/>
 
-##### *File sharing*
+##### [ File sharing ]
 
 Hugin Messenger lets users send files of any size without any cost or restrictions, where files are sent completely peer-to-peer.
+<br/>
+<br/>
 
-##### *Social network*
+##### [ Social network ]
 
 Hugin also has a public (and private) boards function where users can discover new communities and users in a way similar to social media platforms but has the additional upsides of being completely decentralized and permissionless.
+<br/>
+<br/>
+<br/>
 
 ## **Technology**
 
-###### *Blockchain*
+<br/>
+
+##### [ Blockchain ]
 
 The base layer on which Hugin Messenger operates is the kryptokrona blockchain. Kryptokrona is a cryptocurrency based on the CryptoNote-protocol4, which was first implemented by the ByteCoin developers, and further developed by the TurtleCoin developers.
 
@@ -76,8 +93,10 @@ Transactions containing Hugin Messages are ignored by nodes when creating blocks
 Hugin Boards work similarly to private messages, but instead of every user having their own wallet, members of a board all subscribe to the same XKR address, and send messages to this shared XKR address instead of directly to another user’s address.
 
 There is also a distinction between *private* and *public* boards. Public boards are **unencrypted** and function as public discussion forums. Private boards, on the other hand, are encrypted with a shared private key. The downside of this, as compared to private one-on-one messaging, is that if any one person in the group is compromised, the whole group is compromised.
+<br/>
+<br/>
 
-###### *NaCl*
+##### [ NaCl ]
 
 *NaCl (pronounced "salt") is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc. NaCl's goal is to provide all of the core operations needed to build higher-level cryptographic tools.**5*
 
@@ -90,34 +109,44 @@ In practice, this is done by having a user share their XKR address, along with t
 Subsequent messages are encrypted with the NaCl box instead, making use of the sender’s private key, and the recipient’s public key.
 
 For private boards NaCl is also used, but in a different manner. Where private boards use public-private key (asymmetric) cryptography, private boards use simple private key (symmetric) encryption. In practice, this means that private board keys have to be shared in a private channel in order to stay secure, in contrast to the public keys used for private messaging can be shared in public.
+<br/>
+<br/>
 
-###### *WebRTC*
+##### [ WebRTC ]
 
 *WebRTC (Web Real-Time Communication) is a free and open-source project providing web browsers and mobile applications with real-time communication (RTC) via simple application programming interfaces (APIs). It allows audio and video communication to work inside web pages by allowing direct peer-to-peer communication, eliminating the need to install plugins or download native apps.**8*
 
 Hugin Messenger uses WebRTC to establish direct peer-to-peer connections between two users, enabling users to send data to one another off-chain. To make such a connection, however, you first need to make a signalling exchange, i.e. exchange details about how to connect to one another.
 
 In most other implementations of WebRTC a central point is used to share this information, but Hugin simply sends this signaling data (SDP) as a regular encrypted Hugin message. When the WebRTC connection is established, it becomes possible to stream large amounts of data between users, enabling audio and video calls that could not reasonably be stored by every node on the network.
+<br/>
+<br/>
 
-###### *BitTorrent*
+##### [ BitTorrent ]
 
 *BitTorrent is a communication protocol for peer-to-peer file sharing (P2P), which enables users to distribute data and electronic files over the Internet in a decentralized manner.**9*
 
 Hugin Messenger can also send files of any size, and distribute files to a large number of users, by using BitTorrent.
 
 BitTorrent uses magnet links to link to files on it’s network. With Hugin the magnet link is simply sent to another user, and is then downloaded by Hugins built-in BitTorrent-client, which enables seamless and fast file sharing of even the largest of files.
+<br/>
+<br/>
 
-###### OpenAlias
+##### [ OpenAlias ]
 
 *At its most basic, OpenAlias is a TXT DNS record on a FQDN (fully qualified domain name). By combining this with DNS-related technologies we have created an aliasing standard that is extensible for developers, intuitive and familiar for users, and can interoperate with both centralised and decentralised domain systems.**10*
 
 Hugin uses OpenAlias to make it easier for users to share their details with each other, by connecting a user's Hugin address to a subdomain, such as *hugin.xkr.se.*
 
 Then another user can use a standard DNS lookup to get access to the address details, without having to remember anything other than what closely resembles a standard email-address, instead of the 163 characters long Hugin address.
+<br/>
+<br/>
 
 ## **Tokenomics**
 
 Because Hugin requires users to stake XKR in order to interact with the service, this creates an incentive to buy or mine, and hold coins. You “pawn” your XKR every time you send a message, and even if you get your stake back when the message is removed from the transaction pool, the demand for XKR will increase with usage of Hugin Messenger.
+
+<br/>
 
 ## **Future**
 
@@ -127,6 +156,9 @@ Such apps could include, but are not limited to, a live and recorded video and m
 
 XKR <-> BTC. The technology to enable the swaps are already available from COMIT Network.11
  To sum it up: Hugin can become a scalable Web3.0 protocol where developers can develop virtually any service from the old web, but with the added perks of being decentralized, having privacy-by-default, as well as build in payments, taking the spirit of Hugin and Kryptokrona to the next generation of applications.
+
+<br/>
+<br/>
 
 ## **Summary**
 
@@ -148,16 +180,17 @@ At the current juncture clients for Windows, macOS and Linux are available on ou
 
 *kryptokrona.se Fri 3 Sep, 2020*
 
-1 https://drewdevault.com/2018/08/08/Signal.html 
-2 https://signal.org/blog/looking-back-on-the-front/
-3 https://courses.cs.washington.edu/courses/csep590/05au/whitepaper_turnin/oss(10).pdf
-4 https://bytecoin.org/old/whitepaper.pdf
-5 https://nacl.cr.yp.to/
-6 https://tweetnacl.js.org/audits/cure53.pdf 
-7 https://github.com/dchest/tweetnacl-js
-8 https://en.wikipedia.org/wiki/WebRTC
-9 https://en.wikipedia.org/wiki/BitTorrent 
-10 https://openalias.org/
-11 https://github.com/comit-network/xmr-btc-swap 
-12 https://github.com/kryptokrona/hugin-messenger 
-13 https://github.com/kryptokrona/hugin-mobile
+1. https://drewdevault.com/2018/08/08/Signal.html
+2. https://signal.org/blog/looking-back-on-the-front/
+3. https://courses.cs.washington.edu/courses/csep590/05au/whitepaper_turnin/oss(10).pdf
+4. https://bytecoin.org/old/whitepaper.pdf
+5. https://nacl.cr.yp.to/
+6. https://tweetnacl.js.org/audits/cure53.pdf 
+7. https://github.com/dchest/tweetnacl-js
+8. https://en.wikipedia.org/wiki/WebRTC
+9. https://en.wikipedia.org/wiki/BitTorrent 
+10. https://openalias.org/
+11. https://github.com/comit-network/xmr-btc-swap 
+12. https://github.com/kryptokrona/hugin-messenger 
+13. https://github.com/kryptokrona/hugin-mobile
+
