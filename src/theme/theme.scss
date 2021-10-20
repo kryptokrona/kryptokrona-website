@@ -310,13 +310,13 @@ footer {
 
 }
 
-// Lightmode
+/*
 
 $text-color-lightmode: black!important;
-$title-color-lightmode: black !important;
+$title-color-lightmode: rgb(43, 43, 43) !important;
 $background-lightmode: #eeeeee!important;
-$light-background-lightmode: #ffffff!important;
-$navbar-background-lightmode: #eeeeeed8!important;
+$light-background-lightmode: #d3e5ff!important;
+$navbar-background-lightmode: #d3e5ff!important;
 $button-border-color: black!important;
 
 @media (prefers-color-scheme: light) {
@@ -352,4 +352,4 @@ h1, h2, h3, h4, h5, p {
   border-color: $button-border-color;
   color: $text-color-lightmode;
 }
-}
+} */
