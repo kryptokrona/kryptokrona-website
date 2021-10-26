@@ -21,7 +21,7 @@ const IndexPage = ({
             <PageHeader pageTitle='Posts' pageText='Heres everything you need to learn' emoji='🚀'/>
                 <section className='bg-light py-5'>
                     <Container className='mb-5'>
-                    <div>{Posts}</div>
+                    {Posts}
                     </Container>
                 </section>
         </Layout>

@@ -1,6 +1,6 @@
 ---
 slug: "/posts/node"
-date: "2021-09-01"
+date: "2021-09-10"
 title: "Run a Node"
 ---
  #### Have you ever considered what you can do for Kryptokronan?
