@@ -1,21 +1,12 @@
-const path = require(`path`)
+const { DarkMode } = require("@chakra-ui/color-mode");
 
 module.exports = {
-  flags: {
-    DEV_SSR: true
-  },
   siteMetadata: {
+    siteUrl: "https://www.kryptokrona.org",
     title: "Kryptokrona",
-    titleTemplate: "Kryptokrona",
-    description:
-      "En nordisk kryptovaluta för framtiden",
-    siteUrl: "https://www.kryptokrona.se",
-    url: "https://www.kryptokrona.se",
-    image: "/images/xkrsymbol.png", 
-    twitterUsername: "@Kryptokrona",
   },
   plugins: [
-    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
@@ -26,6 +17,7 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
+    "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -45,34 +37,20 @@ module.exports = {
       __key: "pages",
     },
     {
-      resolve: `gatsby-plugin-styled-components`,
+      resolve: "@chakra-ui/gatsby-plugin",
       options: {
+        /**
+         * @property {boolean} [resetCSS=true]
+         * if false, this plugin will not use `<CSSReset />
+         */
+        resetCSS: true,
+        /**
+         * @property {boolean} [isUsingColorMode=true]
+         * if false, this plugin will not use <ColorModeProvider />
+         */
+        isUsingColorMode: true,
+        initialColorMode: "light",
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
-    },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        sassOptions: {
-          includePaths: ["absolute/path/a", "absolute/path/b"],
-        }
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`,
-      },
-    },
-    `gatsby-transformer-remark`,
   ],
 };

@@ -1,20 +1,20 @@
-import * as React from 'react';
+import * as React from 'react'
+import CTAhugin from '../components/CTAhugin';
+import Features from '../components/Features';
+import Hero from '../components/Hero';
+import JoinCommunity from '../components/CTACommunity';
 import Layout from '../components/Layout';
-import Information from '../components/Information';
-import Landing from '../components/Landing';
-import Contributors from '../components/Contributors';
-import Seo from "../components/seo"
+import StatusBar from '../components/StatusBar';
 
-const Homepage = () => {
-    return (
-
-        <Layout>
-            <Seo/>
-            <Landing />
-            <Information />
-            <Contributors />          
-        </Layout>
-    )
+const IndexPage = () => {
+  return (
+    <Layout>
+      <Hero/>
+      <Features/>
+      <CTAhugin/>
+      <StatusBar/>
+      <JoinCommunity/>
+    </Layout>
+  )
 }
-
-export default Homepage
+export default IndexPage

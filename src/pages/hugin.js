@@ -1,15 +1,15 @@
-import * as React from 'react';
-import Layout from '../components/Layout';
-import PageHeader from '../components/PageHeader';
-import LandingHugin from '../components/LandingHugin';
-import Seo from "../components/seo"
+import * as React from 'react'
+import CTACommunity from '../components/CTACommunity'
+import Layout from '../components/Layout'
+import CTAhugin from '../components/CTAhugin'
+import StatusBar from '../components/StatusBar'
 
 const HuginPage = () => {
-    return(
+    return (
         <Layout>
-            <Seo></Seo>
-            <PageHeader pageTitle='Hugin Messenger' pageText='' emoji='🔥' />
-            <LandingHugin />
+            <CTAhugin/>
+            <StatusBar/>
+            <CTACommunity/>
         </Layout>
     )
 }
