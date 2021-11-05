@@ -109,7 +109,7 @@ export default function Footer() {
             <SocialButton label={'Twitter'} href={'https://twitter.com/kryptokrona'}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'TGithub'} href={'https://github.com/kryptokrona'}>
+            <SocialButton label={'TGithub'} href={'https://github.com/kryptokrona/kryptokrona-website'}>
               <FaGithub />
             </SocialButton>
             <SocialButton label={'Discord'} href={'https://chat.kryptokrona.se'}>

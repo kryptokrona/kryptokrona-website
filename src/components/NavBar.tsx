@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { Link as GatsbyLink } from 'gatsby';
 import {
     Box,
     Flex,
@@ -60,7 +61,7 @@ import {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              <Link href="/#"><Img height="7" src={useColorModeValue('https://raw.githubusercontent.com/kryptokrona/Styleguide/66d56e5945d9f7a758d8f899f4e00bff5e97fec1/Logo/Black%20-%20logo.svg', 'https://raw.githubusercontent.com/kryptokrona/Styleguide/66d56e5945d9f7a758d8f899f4e00bff5e97fec1/Logo/White%20-%20logo.svg')}></Img></Link>
+              <GatsbyLink to='/#'><Link href="/#"><Img height="7" src={useColorModeValue('https://raw.githubusercontent.com/kryptokrona/Styleguide/66d56e5945d9f7a758d8f899f4e00bff5e97fec1/Logo/Black%20-%20logo.svg', 'https://raw.githubusercontent.com/kryptokrona/Styleguide/66d56e5945d9f7a758d8f899f4e00bff5e97fec1/Logo/White%20-%20logo.svg')}></Img></Link></GatsbyLink>
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -96,6 +97,7 @@ import {
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
               <PopoverTrigger>
+                <GatsbyLink to={navItem.href ?? '#'}>
                 <Link
                   p={2}
                   href={navItem.href ?? '#'}
@@ -108,6 +110,7 @@ import {
                   }}>
                   {navItem.label}
                 </Link>
+                </GatsbyLink>
               </PopoverTrigger>
   
               {navItem.children && (
@@ -134,6 +137,7 @@ import {
   
   const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
     return (
+      <GatsbyLink to={href}>
       <Link
         href={href}
         role={'group'}
@@ -163,6 +167,7 @@ import {
           </Flex>
         </Stack>
       </Link>
+      </GatsbyLink>
     );
   };
   
@@ -219,9 +224,11 @@ import {
             align={'start'}>
             {children &&
               children.map((child) => (
+                <GatsbyLink to={child.href}>
                 <Link key={child.label} py={2} href={child.href}>
                   {child.label}
                 </Link>
+                </GatsbyLink>
               ))}
           </Stack>
         </Collapse>
@@ -263,12 +270,12 @@ import {
         {
           label: 'Hugin Messenger',
           subLabel: 'Protect your privacy',
-          href: '#',
+          href: '/download',
         },
         {
           label: 'Wallet',
           subLabel: 'Get one of our wallets',
-          href: '#',
+          href: '/download',
         },
       ],
     },
