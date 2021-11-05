@@ -9,7 +9,7 @@ import xkrart from '../images/xkrart.svg'
 
 const Hero = () => {
     return (
-    <Container maxW='7xl' p='0' overflow='hidden'>
+    <Container maxW='7xl' overflow='hidden'>
         <AlertBanner/>
             <Img
             className='rgb'
@@ -18,9 +18,9 @@ const Hero = () => {
             objectFit='fill'
             objectPosition='50% 50%'
             ></Img>
-        <Stack pt='10' p={{xl: 0, sm: 5}} mt='10'>
-                <Heading align="start" fontSize="6xl">A Nordic cryptocurrency for the future</Heading>
-                <Text align="start" fontSize="md">On 2 April 2019, Kryptokrona was launched to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the money of the future.</Text>
+        <Stack pt='10' p={{xl: 0, sm: 5}} mt='5'>
+                <Heading align="start" fontSize={{base: '4xl', sm: '5xl', lg: '6xl', xl: '7xl'}} py='5'>A Nordic cryptocurrency for the future</Heading>
+                <Text align="start" fontSize={{base: 'md', lg: 'lg', xl: 'xl'}}>On 2 April 2019, Kryptokrona was launched to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the money of the future.</Text>
             <Stack alignSelf="start" direction="row" pt='5'>
                 <GatsbyLink to='/info'><Button
                 bg={useColorModeValue('black', 'white')} 
