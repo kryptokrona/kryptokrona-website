@@ -52,7 +52,7 @@ import {
   
   export default function StatusBar() {
 
-    fetch(`https://blocksum.org/api/getinfo`)
+/*     fetch(`https://blocksum.org/api/getinfo`)
         .then(response => response.json()) // parse JSON from request
         .then(data => {
             //add data to id
@@ -65,7 +65,7 @@ import {
         .then(response => response.json())
         .then(data => {
             document.getElementById('price').innerHTML = (data.market_data.current_price.btc * 100000000) + ' Sats'
-        })
+        }) */
 
     return (
       <Box maxW="7xl" mx={'auto'} my='10' pb={10} px={{ base: 2, sm: 12, md: 17 }}>
