@@ -4,6 +4,7 @@ import { Button } from '@chakra-ui/button'
 import { Img } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/color-mode'
 import AlertBanner from './AlertBanner'
+import xkrArt from '../images/xkrart.svg'
 
 const Hero = () => {
     return (
@@ -11,8 +12,9 @@ const Hero = () => {
         <AlertBanner/>
             <Img
             className='rgb'
+            width='100%'
             maxW='7xl'
-            src='https://github.com/kryptokrona/kryptokrona-website/blob/main/src/images/xkrart.png?raw=true'
+            src={xkrArt}
             objectFit='fill'
             objectPosition='50% 50%'
             ></Img>
