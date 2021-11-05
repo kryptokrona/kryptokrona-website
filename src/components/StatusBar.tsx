@@ -1,5 +1,6 @@
 import * as React from 'react'
 import fetch from 'node-fetch'
+import { useState, useEffect } from "react"
 import {
     Box,
     Flex,
@@ -14,6 +15,7 @@ import {
   import { FaNetworkWired, FaSquare } from 'react-icons/fa';
   import { MdSpeed } from 'react-icons/md';
   import { BiDollar } from 'react-icons/bi'
+ 
   
   
   interface StatsCardProps {
@@ -52,21 +54,29 @@ import {
   }
   
   export default function StatusBar() {
+    
+    useEffect(() => {
+      fetch('https://swenode.org/api/getinfo')
+      .then(res => res.json())
+      .then(async(data) => {
+          const Hashrate = data.hashrate;
+          const Height = data.height;
+          const Nodes = data.grey_peerlist_size;
+          document.getElementById('hashrate').innerHTML = (Hashrate / 1000000).toFixed(2) + ' MH/s'
+          document.getElementById('height').innerHTML = Height;
+          document.getElementById('nodes').innerHTML = Nodes;
 
-     fetch(`https://blocksum.org/api/getinfo`)
-        .then(response => response.json()) // parse JSON from request
-        .then(data => {
-            //add data to id
-            document.getElementById('hashrate').innerHTML = (data.hashrate / 1000000).toFixed(2) + ' MH/s'
-            document.getElementById('height').innerHTML = data.height
-            document.getElementById('nodes').innerHTML = data.grey_peerlist_size
-        })
+      })
+      fetch('https://api.coingecko.com/api/v3/coins/kryptokrona')
+      .then(response => response.json())
+      .then(data => {
+        const Price = data.market_data.current_price.btc
+        document.getElementById('price').innerHTML = (Price * 100000000) + ' Sats'
+      })
+    })
+
     // get data from Coingecko
-    fetch('https://api.coingecko.com/api/v3/coins/kryptokrona')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('price').innerHTML = (data.market_data.current_price.btc * 100000000) + ' Sats'
-        }) 
+
 
     return (
       <Box maxW="7xl" mx={'auto'} my='10' pb={10} px={{ base: 2, sm: 12, md: 17 }}>
