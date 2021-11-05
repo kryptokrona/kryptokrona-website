@@ -12,7 +12,7 @@ const Hero = () => {
             <Img
             className='rgb'
             maxW='7xl'
-            src='https://kryptolink.se/static/xkrart-62cd1762a4c10098ca3b6b8dcca2c7f8.png'
+            src='https://github.com/kryptokrona/kryptokrona-website/blob/main/src/images/xkrart.png?raw=true'
             objectFit='fill'
             objectPosition='50% 50%'
             ></Img>
