@@ -6,6 +6,7 @@ import { Img } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/color-mode'
 import AlertBanner from './AlertBanner'
 import xkrart from '../images/xkrart.svg'
+import { graphql } from 'gatsby';
 
 const Hero = () => {
     return (
@@ -41,3 +42,17 @@ const Hero = () => {
 }
 
 export default Hero
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
