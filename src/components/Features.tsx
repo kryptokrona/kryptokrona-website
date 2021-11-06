@@ -19,18 +19,18 @@ import {
 
   export default function Features() {
     return (
-    <Container maxW='7xl' my='8rem'>
+    <Container maxW='7xl' my='8rem' p={{xl: 0, sm: 5}}>
       <Box>
         <Stack spacing={4} as={Container} maxW={'7xl'} textAlign={'start'}>
-          <Heading fontSize={'4xl'}>Why Kryptokrona?</Heading>
-          <Text color={useColorModeValue('gray.900', 'White')} fontSize={'xl'} py='5'>
+          <Heading fontSize={{base: '4xl', xl: '5xl'}}>Why Kryptokrona? 🤔</Heading>
+          <Text color={useColorModeValue('gray.900', 'White')} fontSize={{base: 'md', lg: 'lg', xl: 'xl'}} py='5'>
           The advantages with Kryptokrona compared to the alternatives are many.
           </Text>
         </Stack>
   
           <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10} py='5'>
                 <HStack align={'top'}>
-                <Box color={useColorModeValue('gray.900', 'White')} px={0}>
+                <Box color={useColorModeValue('gray.900', 'White')} px={2}>
                   <BiLockAlt size='1.5rem'/>
                 </Box>
                 <VStack align={'start'}>
@@ -39,7 +39,7 @@ import {
                 </VStack>
               </HStack>
               <HStack align={'top'}>
-                <Box color={useColorModeValue('gray.900', 'White')} px={0}>
+                <Box color={useColorModeValue('gray.900', 'White')} px={2}>
                   <IoMdPeople size='1.5rem'/>
                 </Box>
                 <VStack align={'start'}>
@@ -48,7 +48,7 @@ import {
                 </VStack>
               </HStack>
               <HStack align={'top'}>
-                <Box color={useColorModeValue('gray.900', 'White')} px={0}>
+                <Box color={useColorModeValue('gray.900', 'White')} px={2}>
                   <BiSend size='1.5rem'/>
                 </Box>
                 <VStack align={'start'}>
@@ -57,7 +57,7 @@ import {
                 </VStack>
               </HStack>
               <HStack align={'top'}>
-                <Box color={useColorModeValue('gray.900', 'White')} px={0}>
+                <Box color={useColorModeValue('gray.900', 'White')} px={2}>
                   <HiCubeTransparent size='1.5rem'/>
                 </Box>
                 <VStack align={'start'}>
@@ -66,7 +66,7 @@ import {
                 </VStack>
               </HStack>
               <HStack align={'top'}>
-                <Box color={useColorModeValue('gray.900', 'White')} px={0}>
+                <Box color={useColorModeValue('gray.900', 'White')} px={2}>
                   <BsLightningChargeFill size='1.5rem'/>
                 </Box>
                 <VStack align={'start'}>
@@ -75,7 +75,7 @@ import {
                 </VStack>
               </HStack>
               <HStack align={'top'}>
-                <Box color={useColorModeValue('gray.900', 'White')} px={0}>
+                <Box color={useColorModeValue('gray.900', 'White')} px={2}>
                   <Icon as={CheckIcon} />
                 </Box>
                 <VStack align={'start'}>
@@ -84,7 +84,7 @@ import {
                 </VStack>
               </HStack>
               <HStack align={'top'}>
-                <Box color={useColorModeValue('gray.900', 'White')} px={0}>
+                <Box color={useColorModeValue('gray.900', 'White')} px={2}>
                   <Icon as={CheckIcon} />
                 </Box>
                 <VStack align={'start'}>
@@ -93,7 +93,7 @@ import {
                 </VStack>
               </HStack>
               <HStack align={'top'}>
-                <Box color={useColorModeValue('gray.900', 'White')} px={0}>
+                <Box color={useColorModeValue('gray.900', 'White')} px={2}>
                   <BiSupport size='1.5rem'/>
                 </Box>
                 <VStack align={'start'}>
