@@ -33,7 +33,6 @@ const Hero = () => {
                     bg:'gray.500'
                 }}
                 ><Trans>Learn more</Trans></Button></GatsbyLink>
-                <p>{t('message')}</p>
                 <GatsbyLink to='/download'><Button colorScheme="black" variant="outline" size="lg"><Trans>Download</Trans></Button></GatsbyLink>
             </Stack>
         <Stack>
