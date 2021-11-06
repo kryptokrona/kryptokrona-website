@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Box, Container, Heading, Stack, Text} from '@chakra-ui/layout'
-import { Link as GatsbyLink } from 'gatsby'
+import {Link } from 'gatsby-plugin-react-i18next';
 import { Button } from '@chakra-ui/button'
 import { Img } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/color-mode'
@@ -22,16 +22,15 @@ const Hero = () => {
                 <Heading align="start" fontSize={{base: '4xl', sm: '5xl', lg: '6xl', xl: '7xl'}} py='5'>A Nordic cryptocurrency for the future</Heading>
                 <Text align="start" fontSize={{base: 'md', lg: 'lg', xl: 'xl'}}>On 2 April 2019, Kryptokrona was launched to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the money of the future.</Text>
             <Stack alignSelf="start" direction="row" pt='5'>
-                <GatsbyLink to='/info'><Button
+                <Link to='/info'><Button
                 bg={useColorModeValue('black', 'white')} 
                 color={useColorModeValue('white', 'black')}
                 size="lg"
                 _hover={{
                     bg:'gray.500'
                 }}
-                >Learn more</Button></GatsbyLink>
-                <p>{t('message')}</p>
-                <GatsbyLink to='/download'><Button colorScheme="black" variant="outline" size="lg">Download</Button></GatsbyLink>
+                >Learn more</Button></Link>
+                <Link to='/download'><Button colorScheme="black" variant="outline" size="lg">Download</Button></Link>
             </Stack>
         <Stack>
             
