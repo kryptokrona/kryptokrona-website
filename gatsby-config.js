@@ -46,28 +46,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
-        localeJsonSourceName: `locale`,
-        languages: [`en`, `fr`, `ar`],
+        localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
+        languages: [`en`, `se`, `no`],
         defaultLanguage: `en`,
-        siteUrl: `http://localhost:8000/`,
+        // if you are using Helmet, you must include siteUrl, and make sure you add http:https
+        siteUrl: `https://kryptokrona.org`,
+        // you can pass any i18next options
         i18nextOptions: {
           interpolation: {
-            escapeValue: false 
+            escapeValue: false // not needed for react as it escapes by default
           },
           keySeparator: false,
           nsSeparator: false
         },
-        pages: [
-          {
-            matchPath: '/:lang?/blog/:uid',
-            getLanguageFromPath: true,
-            excludeLanguages: ['es']
-          },
-          {
-            matchPath: '/preview',
-            languages: ['en']
-          }
-        ]
       }
     },
     {

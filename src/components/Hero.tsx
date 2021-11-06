@@ -46,7 +46,7 @@ const Hero = () => {
 export default Hero
 
 export const query = graphql`
-  query($language: String!) {
+  query ($language: String!) {
     locales: allLocale(filter: {language: {eq: $language}}) {
       edges {
         node {
