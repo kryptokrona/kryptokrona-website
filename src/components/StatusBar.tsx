@@ -79,10 +79,10 @@ import {
 
 
     return (
-      <Box maxW="7xl" mx={'auto'} my='10' pb={10} px={{ base: 2, sm: 12, md: 17 }}>
+      <Box maxW="7xl" mx={'auto'} my='8rem' pb={10} px={{base: 5, xl: 0, sm: 10,}}>
         <Heading
           textAlign={'start'}
-          fontSize={'3xl'}
+          fontSize={{base: '4xl', xl: '5xl'}}
           py={10}
           fontWeight={'bold'}>
           Quick glance of the network.

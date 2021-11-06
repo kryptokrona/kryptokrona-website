@@ -62,7 +62,7 @@ export default function Footer() {
    
     <Box
       color={useColorModeValue('gray.700', 'gray.200')}>
-      <Container as={Stack} maxW="7xl" paddingTop="5rem" px='5'>
+      <Container as={Stack} maxW="7xl" paddingTop="5rem" px={{base: 5, xl: 0, sm: 10,}}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'start'}>
             <ListHeader>Links</ListHeader>

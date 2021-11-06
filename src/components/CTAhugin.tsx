@@ -6,14 +6,15 @@ import { VscDebugStart } from 'react-icons/vsc'
 import { Container } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/color-mode'
 import { Link as GatsbyLink } from 'gatsby'
+import Hugin from '../images/hugin.png'
 
 const CTAhugin = () => {
     return(
-        <Container maxW='7xl' marginTop='20'>
-            <Stack>
-                <Heading align="start" fontSize="6xl">Hugin Messenger</Heading>
-                <Img maxW='3xl' align="start" src="https://user-images.githubusercontent.com/3246908/118410333-273fc000-b68f-11eb-8883-77f42f4c1558.png"/>
-                        <Text align="start" fontSize="lg">Hugin is a messaging service where messages are stored on the kryptokrona blockchain. Your messages are secured with industry leading encryption so that only you and your chat partner have the possibility to read them. The purpose is not to gather any personal information about the users, unlike most apps and social media.</Text>
+        <Container maxW='7xl' marginTop='20' px={{base: 5, xl: 0, sm: 10,}}>
+            <Stack spacing='10'>
+                <Heading align="start" fontSize={{base: '4xl', sm: '5xl', lg: '6xl', xl: '7xl'}}>Hugin Messenger</Heading>
+                <Img shadow='xl' maxW='100%' align="start" src={Hugin}/>
+                        <Text align="start" fontSize={{base: 'md', lg: 'lg', xl: 'xl'}}>Hugin is a messaging service where messages are stored on the kryptokrona blockchain. Your messages are secured with industry leading encryption so that only you and your chat partner have the possibility to read them. The purpose is not to gather any personal information about the users, unlike most apps and social media.</Text>
                         <Stack alignSelf="start" direction="row" pt='5'>
                 <GatsbyLink to='/hugin'>
                 <Button 

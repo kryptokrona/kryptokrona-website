@@ -7,10 +7,10 @@ import { Link as GatsbyLink } from 'gatsby'
 
 const CTACommunity = () => {
     return(
-        <Container maxW="7xl">
+        <Container maxW="7xl" px={{base: 5, xl: 0, sm: 10,}}>
         <Stack marginTop="5" spacing='5'>
-                <Heading align="start" fontSize="6xl">Join our community</Heading>
-                <Text align="start" fontSize="md">This project is open source and maintained by the Community. You can for example make changes to this site, suggest awesome new features, or help us squash bugs. Not a developer? No worries, there's tons of things to do!</Text>
+                <Heading align="start" fontSize={{base: '4xl', sm: '5xl', lg: '6xl', xl: '7xl'}}>Join our community</Heading>
+                <Text align="start" fontSize={{base: 'md', lg: 'lg', xl: 'xl'}}>This project is open source and maintained by the Community. You can for example make changes to this site, suggest awesome new features, or help us squash bugs. Not a developer? No worries, there's tons of things to do!</Text>
                 <Stack alignSelf="start" direction="row">
                 <Stack alignSelf="start" direction="row" pt='5'>
                 <GatsbyLink to='/hugin'><Link to='/hugin'><Button bg={useColorModeValue('black', 'white')} color={useColorModeValue('white', 'black')} size="lg" _hover={{ bg:'gray.500'}}>Join Hugin</Button></Link></GatsbyLink>
