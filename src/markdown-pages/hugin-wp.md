@@ -1,12 +1,10 @@
 ---
 slug: "/blog/hugin-wp"
 date: "2019-05-04"
-title: "My first blog post"
-category: "Doc"
+title: "Hugin Whitepaper"
+category: "News"
 author: "Knugen"
 ---
-
-# Hugin Messenger Whitepaper
 
 <br/><br/>
 
