@@ -1,7 +1,7 @@
 ---
 slug: "/blog/hugin-wp"
 date: "2019-05-04"
-title: "Newsletter 12"
+title: "Newsletter - December"
 category: "News"
 color: "green"
 author: "Knugen"
