@@ -10,13 +10,14 @@ import xkrartlight from "../images/xkrart3.svg";
 
 const Hero = () => {
   return (
-    <Container maxW="7xl" overflow="hidden" mt='20px' px='0'>
+    <Container maxW="7xl" overflow="hidden" mt='15px' px='0'>
       <Box width="100%" maxW="7xl"> 
         <Img
           src={useColorModeValue(xkrartlight, xkrartdark)}
           maxW="7xl"
           borderRadius={{xl:'10px', lg:0}}
           width="100%"
+          height='55vh'
           objectFit="cover"
           objectPosition="center"
         ></Img>

@@ -16,7 +16,7 @@ const AlertBanner = () => {
     <Alert
       position="absolute"
       height='60px'
-      top="94px"
+      top="89px"
       maxW="7xl"
       borderTopRadius={{xl:'10px', lg:0}}
       display="flex"
