@@ -15,10 +15,11 @@ const CollectionPage = ({
     .map(edge => <PostCard key={edge.node.id} post={edge.node} />)
 
   return(
+    
         <Layout>
-          <Container maxW='7xl'>
+          <Container maxW='7xl' px={{base: 5, xl: 0, sm: 10,}} mt='5'>
           <Heading fontSize='6xl'>Docs</Heading>
-          <Wrap justify='start'>
+          <Wrap mt='10' justify='start'>
           {Posts}
           </Wrap>
           </Container>
@@ -40,6 +41,8 @@ export const pageQuery = graphql`
             slug
             title
             category
+            color
+            author
           }
         }
       }

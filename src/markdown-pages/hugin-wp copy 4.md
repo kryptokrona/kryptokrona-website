@@ -1,9 +1,9 @@
 ---
 slug: "/blog/hugin-wp"
 date: "2019-05-04"
-title: "Hugin Whitepaper"
-category: "Doc"
-color: "blue"
+title: "Newsletter 12"
+category: "News"
+color: "green"
 author: "Knugen"
 ---
 
