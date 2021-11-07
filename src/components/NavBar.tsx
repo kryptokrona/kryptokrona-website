@@ -144,12 +144,12 @@ import {
         display={'block'}
         p={2}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('gray.200', 'gray.900') }}>
+        _hover={{ bg: useColorModeValue('gray.200', 'grey.100') }}>
         <Stack direction={'row'} align={'center'}>
           <Box>
             <Text
               transition={'all .3s ease'}
-              _groupHover={{ color: 'gray.500' }}
+              _groupHover={{ color: useColorModeValue('black', 'grey') }}
               fontWeight={500}>
               {label}
             </Text>

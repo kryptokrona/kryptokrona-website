@@ -19,7 +19,7 @@ const Hero = () => {
             objectFit='fill'
             objectPosition='50% 50%'
             ></Img>
-        <Stack pt='10' px={{base: 5, xl: 0, sm: 10,}} mt='5'>
+        <Stack px={{base: 5, xl: 0, sm: 10,}} mt='5'>
                 <Heading align="start" fontSize={{base: '4xl', sm: '5xl', lg: '6xl', xl: '7xl'}} py='3'>A Nordic cryptocurrency for the future</Heading>
                 <Text align="start" fontSize={{base: 'md', lg: 'lg', xl: 'xl'}}>On 2 April 2019, Kryptokrona was launched to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the money of the future.</Text>
             <Stack alignSelf="start" direction="row" pt='5'>

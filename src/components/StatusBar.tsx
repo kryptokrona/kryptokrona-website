@@ -31,7 +31,7 @@ import {
         px={{ base: 2, md: 4 }}
         py={'5'}
         border={'2px solid'}
-        borderColor={useColorModeValue('gray.900', 'white')}
+        borderColor={useColorModeValue('black', 'white')}
         rounded={'lg'}>
         <Flex justifyContent={'space-between'}>
           <Box pl={{ base: 2, md: 4 }}>
