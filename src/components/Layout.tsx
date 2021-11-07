@@ -1,7 +1,7 @@
 import * as React from "react";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
-import "../theme.scss";
+import "../theme.css";
 import { SEO } from "./Seo";
 
 const Layout = (props) => {

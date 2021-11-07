@@ -31,3 +31,7 @@
     -moz-animation: rgb 30s ease infinite;
     animation: rgb 30s ease infinite;
   } 
+
+  code {
+    color: #5ff281!important;
+  }
