@@ -260,7 +260,7 @@ import {
         {
           label: 'Docs',
           subLabel: 'Interested to learn more?',
-          href: '#',
+          href: '/collection',
         },
       ],
     },

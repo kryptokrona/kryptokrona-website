@@ -1,5 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Container, Heading, Text } from "@chakra-ui/layout"
+import Layout from "../components/Layout"
+
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -7,16 +10,16 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+      <Layout>
+        <Container maxW='7xl'>
+        <Heading>{frontmatter.title}</Heading>
+        <Text> - {frontmatter.date}</Text>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-      </div>
-    </div>
+        </Container>
+      </Layout>
   )
 }
 
@@ -29,6 +32,7 @@ export const pageQuery = graphql`
         slug
         title
         category
+        author
       }
     }
   }

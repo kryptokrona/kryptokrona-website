@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Box, Container, Heading, Stack, Text} from '@chakra-ui/layout'
+import { Container, Heading, Stack, Text} from '@chakra-ui/layout'
 import { Link as GatsbyLink } from 'gatsby'
 import { Button } from '@chakra-ui/button'
 import { Img } from '@chakra-ui/react'
@@ -9,7 +9,7 @@ import xkrart from '../images/xkrart.svg'
 
 const Hero = () => {
     return (
-    <Container maxW='7xl' overflow='hidden'>
+    <Container maxW='7xl' overflow='hidden' px='0'>
         <AlertBanner/>
             <Img
             className='rgb'
@@ -19,7 +19,7 @@ const Hero = () => {
             objectPosition='50% 50%'
             ></Img>
         <Stack pt='10' px={{base: 5, xl: 0, sm: 10,}} mt='5'>
-                <Heading align="start" fontSize={{base: '4xl', sm: '5xl', lg: '6xl', xl: '7xl'}} py='5'>A Nordic cryptocurrency for the future</Heading>
+                <Heading align="start" fontSize={{base: '4xl', sm: '5xl', lg: '6xl', xl: '7xl'}} py='3'>A Nordic cryptocurrency for the future</Heading>
                 <Text align="start" fontSize={{base: 'md', lg: 'lg', xl: 'xl'}}>On 2 April 2019, Kryptokrona was launched to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the money of the future.</Text>
             <Stack alignSelf="start" direction="row" pt='5'>
                 <GatsbyLink to='/info'><Button

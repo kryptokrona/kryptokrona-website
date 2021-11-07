@@ -1,5 +1,5 @@
 import { Button } from '@chakra-ui/button'
-import { Text, VStack, HStack, Heading, Stack } from '@chakra-ui/layout'
+import { Text, HStack, Heading, Stack } from '@chakra-ui/layout'
 import * as React from 'react'
 import { Img } from '@chakra-ui/image'
 import { VscDebugStart } from 'react-icons/vsc'
