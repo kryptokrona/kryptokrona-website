@@ -10,21 +10,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `guides`,
-        path: `${__dirname}/src/markdown-pages/guides`,
+        path: `${__dirname}/src/guides`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `news`,
-        path: `${__dirname}/src/markdown-pages/news`,
+        path: `${__dirname}/src/news`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `docs`,
-        path: `${__dirname}/src/markdown-pages/docs`,
+        path: `${__dirname}/src/docs`,
       },
     },
     "gatsby-transformer-remark",
