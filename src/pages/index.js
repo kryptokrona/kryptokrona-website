@@ -5,6 +5,8 @@ import Hero from '../components/Hero';
 import JoinCommunity from '../components/CTACommunity';
 import Layout from '../components/Layout';
 import StatusBar from '../components/StatusBar';
+import { Button } from '@chakra-ui/button';
+
 
 const IndexPage = () => {
   return (

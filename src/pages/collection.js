@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import PostCard from '../components/PostCard';
 import { Container, Heading, Wrap } from '@chakra-ui/layout';
+import AlertBanner from "../components/AlertBanner";
 
 
 const CollectionPage = ({

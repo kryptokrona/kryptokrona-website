@@ -1,16 +1,18 @@
 import { Link, Text } from '@chakra-ui/layout'
-import { Box } from '@chakra-ui/react'
 import * as React from 'react'
-import { Link as GatsbyLink } from 'gatsby';
-import { useColorModeValue } from '@chakra-ui/color-mode';
+import { Alert, AlertIcon, AlertTitle, AlertDescription } from '@chakra-ui/alert';
+import { Button } from '@chakra-ui/button';
+
+
+//change status to change color- use "info, error, success, warning" 
 
 const AlertBanner = () => {
     return (
-        <Box height='36px' borderRadius='2'>
-            <Text align='center' color={useColorModeValue('black','white')}>
-            New wallet update! 🎉 <Link color={useColorModeValue('blue', 'lightblue')} href='https://github.com'>Download here!</Link>
-            </Text>
-        </Box>
+        <Alert status="info" borderRadius='10' my='5' mr='10'>
+        <AlertIcon />
+        <Text>New wallet update 🎉 </Text>
+        <Link><Button size='sm' position="absolute" right="8px" top="8px">Download</Button></Link>
+        </Alert>
     )
 }
 

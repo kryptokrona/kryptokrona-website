@@ -12,6 +12,7 @@ const Hero = () => {
     <Container maxW='7xl' overflow='hidden' px='0'>
         <AlertBanner/>
             <Img
+            borderRadius='10'
             className='rgb'
             maxW='7xl'
             src={xkrart}
