@@ -9,7 +9,7 @@ import { Button } from '@chakra-ui/button';
 
 const AlertBanner = () => {
     return (
-        <Alert maxW='7xl' status="info" borderRadius='10' my='5' mr='10' display='flex'>
+        <Alert  maxW='7xl' status="info" borderRadius='10' my='5' display='flex'>
         <AlertIcon />
         <Text>New wallet update 🎉 </Text>
         <Link><Button size='sm' position="absolute" right="8px" top="8px">Download</Button></Link>

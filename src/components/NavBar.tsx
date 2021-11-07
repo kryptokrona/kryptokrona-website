@@ -248,6 +248,11 @@ import {
       label: 'Get Started',
       children: [
         {
+          label: 'Learn more',
+          subLabel: 'Lets find some coins!',
+          href: '/info',
+        },
+        {
           label: 'Mining',
           subLabel: 'Lets find some coins!',
           href: '/mining',
@@ -288,7 +293,7 @@ import {
       href: '#',
     },
     {
-        label: 'Info',
-        href: '/info',
+        label: 'News',
+        href: '/news',
       },
   ];

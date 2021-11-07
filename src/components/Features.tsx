@@ -19,7 +19,7 @@ import {
 
   export default function Features() {
     return (
-    <Container maxW='7xl' my='8rem' px={{base: 5, xl: 0, sm: 10,}}>
+    <Container maxW='7xl' my='8rem' px={{base: 5, xl: 0, md: 0, sm: 10,}}>
       <Box>
         <Stack spacing={4} as={Container} maxW={'7xl'} textAlign={'start'}>
           <Heading fontSize={{base: '4xl', xl: '5xl'}}>Why Kryptokrona? 🤔</Heading>

@@ -68,7 +68,7 @@ export default function Footer() {
             <ListHeader>Links</ListHeader>
             <Link href={'#'}>Download</Link>
             <Link href={'#'}>Hugin</Link>
-            <Link href={'#'}>Info</Link>
+            <Link href={'/news'}>News</Link>
             <Link href={'#'}>Contact</Link>
           </Stack>
 
@@ -86,7 +86,7 @@ export default function Footer() {
 
           <Stack align={'start'}>
             <ListHeader>Edit Page</ListHeader>
-            <Link href="https://github.com/kryptokrona"><Button colorScheme="purple"><BsGithub size="1.2rem"/><Text padding="3">Github</Text></Button></Link>
+            <Link href="https://github.com/kryptokrona/kryptokrona-website"><Button colorScheme="purple"><BsGithub size="1.2rem"/><Text padding="3">Github</Text></Button></Link>
           </Stack>
         </SimpleGrid>
       </Container>

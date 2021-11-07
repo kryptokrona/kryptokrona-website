@@ -6,7 +6,7 @@ import { Container, Heading, Wrap } from '@chakra-ui/layout';
 import CTACommunity from '../components/CTACommunity';
 
 
-const CollectionPage = ({
+const NewsPage = ({
   data: {
     allMarkdownRemark: { edges },
   },
@@ -19,7 +19,7 @@ const CollectionPage = ({
     
         <Layout>
           <Container mb='5rem' maxW='7xl' mt='5' px={{base: 5, xl: 0, sm: 10,}}>
-          <Heading fontSize='6xl'>Docs</Heading>
+          <Heading fontSize='6xl'>News</Heading>
           <Wrap mt='10' justify='start'>
           {Posts}
           </Wrap>
@@ -29,22 +29,23 @@ const CollectionPage = ({
   ) 
 }
 
-export default CollectionPage
+export default NewsPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      sort: {order: DESC, fields: [frontmatter___date]}
+      filter: {frontmatter: {category: {in: "News"}}}
+    ) {
       edges {
         node {
-          id
-          excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            title
+            author
             category
             color
-            author
+            date
+            slug
+            title
           }
         }
       }
