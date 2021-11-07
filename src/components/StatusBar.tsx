@@ -79,7 +79,7 @@ import {
 
 
     return (
-      <Box maxW="7xl" mx={'auto'} my='8rem' pb={10} px={{base: 5, xl: 0, sm: 10,}}>
+      <Box maxW="7xl" mx={'auto'} my='5rem' pb={10} px={{base: 5, xl: 0, sm: 10,}}>
         <Heading
           textAlign={'start'}
           fontSize={{base: '4xl', xl: '5xl'}}
