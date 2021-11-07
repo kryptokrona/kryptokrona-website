@@ -7,10 +7,14 @@ import { Tag } from "@chakra-ui/tag";
 const PostCard = ({ post }) => {
 
 const TagHolder = post.frontmatter.category
-let TagColor = 'teal'
+let TagColor = ''
 
-if(TagHolder === 'Doc')
-TagColor = 'yellow'
+if (TagHolder === 'Doc')
+    TagColor = 'yellow'
+else if (TagHolder === 'News')
+    TagColor = 'teal'
+else if (TagHolder === 'Guide')
+    TagColor = 'blue'
 
     return (
 <WrapItem padding='8' borderRadius='10' border='2px solid' borderColor={useColorModeValue('black', 'white')}>

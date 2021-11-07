@@ -2,7 +2,7 @@
 slug: "/blog/hugin-wp"
 date: "2019-05-04"
 title: "Hugin Whitepaper"
-category: "News"
+category: "Doc"
 author: "Knugen"
 ---
 
