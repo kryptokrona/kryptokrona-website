@@ -4,8 +4,6 @@ import { WrapItem, VStack, Heading, Text } from "@chakra-ui/layout";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import { Tag } from "@chakra-ui/tag";
 
-import "../theme.scss";
-
 const PostCard = ({ post }) => {
   return (
     <WrapItem
