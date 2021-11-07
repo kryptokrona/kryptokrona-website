@@ -1,9 +1,9 @@
 ---
-slug: "/blog/hugin-wp"
+slug: "/guides/hugin-wp"
 date: "2019-05-04"
-title: "Hugin Whitepaper"
-category: "Docs"
-color: "blue"
+title: "Run a node"
+category: "Guide"
+color: "yellow"
 author: "Knugen"
 ---
 

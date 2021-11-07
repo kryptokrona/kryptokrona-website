@@ -1,9 +1,9 @@
 ---
-slug: "/blog/hugin-wp"
+slug: "/guides/hugin-wp"
 date: "2019-05-04"
-title: "Newsletter - December"
-category: "News"
-color: "green"
+title: "Run a pool"
+category: "Guide"
+color: "yellow"
 author: "Knugen"
 ---
 

@@ -8,14 +8,15 @@ import "../theme.scss";
 
 const PostCard = ({ post }) => {
   return (
+    <Link to={post.frontmatter.slug}>
     <WrapItem
       width={{ base: "100%", xl: "25.6rem", lg: "49%", md: "49%", sm: "100%" }}
       padding="8"
       borderRadius="10"
       border="2px solid"
       borderColor={useColorModeValue("black", "white")}
+      _hover={useColorModeValue('gray.700','gray.200')}
     >
-      <Link to={post.frontmatter.slug}>
         <VStack align="start" spacing="3">
           <Heading color={useColorModeValue("black", "white")}>
             {post.frontmatter.title}
@@ -27,8 +28,8 @@ const PostCard = ({ post }) => {
         <Tag px="5" mt="5" colorScheme={post.frontmatter.color}>
           {post.frontmatter.category}
         </Tag>
-      </Link>
     </WrapItem>
+    </Link>
   );
 };
 

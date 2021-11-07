@@ -1,7 +1,7 @@
 ---
-slug: "/blog/hugin-wp"
+slug: "/docs/hugin-wp"
 date: "2019-05-04"
-title: "Whitepaper" 
+title: "Hugin Whitepaper"
 category: "Docs"
 color: "blue"
 author: "Knugen"

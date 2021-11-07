@@ -1,9 +1,9 @@
 ---
-slug: "/blog/hugin-wp"
+slug: "/docs/hugin-wp"
 date: "2019-05-04"
-title: "Run a pool"
-category: "Guide"
-color: "yellow"
+title: "Whitepaper" 
+category: "Docs"
+color: "blue"
 author: "Knugen"
 ---
 

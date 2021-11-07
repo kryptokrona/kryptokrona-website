@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Container, Heading, Text } from "@chakra-ui/layout";
 import Layout from "../components/Layout";
-import { Tag } from "@chakra-ui/tag";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.

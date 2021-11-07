@@ -1,7 +1,7 @@
 ---
-slug: "/blog/hugin-wp"
+slug: "/guides/hugin-wp"
 date: "2019-05-04"
-title: "Run a node"
+title: "Start Mining"
 category: "Guide"
 color: "yellow"
 author: "Knugen"
