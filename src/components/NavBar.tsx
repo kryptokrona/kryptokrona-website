@@ -34,7 +34,7 @@ export default function NavBar() {
 
   return (
     <Box>
-      <Container maxW="7xl">
+      <Container maxW="7xl" pt='10px'>
         <Flex
           bg={useColorModeValue("white", "gray.800")}
           color={useColorModeValue("gray.600", "white")}
@@ -61,7 +61,7 @@ export default function NavBar() {
               aria-label={"Toggle Navigation"}
             />
           </Flex>
-          <Flex flex={{ base: 5 }} justify={{ base: "center", md: "start" }}>
+          <Flex flex={{ base: 9 }} justify={{ base: "center", md: "start" }}>
             <Text
               textAlign={useBreakpointValue({ base: "center", md: "left" })}
               fontFamily={"heading"}

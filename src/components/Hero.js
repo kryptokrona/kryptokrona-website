@@ -13,7 +13,7 @@ const Hero = () => {
     <Container maxW="7xl" overflow="hidden" mt='20px' px='0'>
       <Box width="100%" maxW="7xl"> 
         <Img
-          src={useColorModeValue({xkrartdark}, {xkrartlight})}
+          src={useColorModeValue(xkrartlight, xkrartdark)}
           maxW="7xl"
           borderRadius={{xl:'10px', lg:0}}
           width="100%"
