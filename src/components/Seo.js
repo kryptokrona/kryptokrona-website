@@ -1,5 +1,5 @@
-import * as React from "react"
-import {Helmet} from "react-helmet"
+import * as React from "react";
+import { Helmet } from "react-helmet";
 
 export const SEO = (title) => {
   return (
@@ -12,4 +12,4 @@ export const SEO = (title) => {
       </Helmet>
     </div>
   );
-}
+};

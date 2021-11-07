@@ -1,13 +1,13 @@
-import * as React from 'react'
-import JoinCommunity from '../components/CTACommunity'
-import Layout from '../components/Layout'
+import * as React from "react";
+import JoinCommunity from "../components/CTACommunity";
+import Layout from "../components/Layout";
 
 const BuyPage = () => {
-    return (
-        <Layout>
-            <JoinCommunity/>
-        </Layout>
-    )
-}
+  return (
+    <Layout>
+      <JoinCommunity />
+    </Layout>
+  );
+};
 
-export default BuyPage
+export default BuyPage;
