@@ -1,5 +1,5 @@
 ---
-slug: "/docs/hugin-wp"
+slug: "/docs/wp"
 date: "2019-05-04"
 title: "Whitepaper" 
 category: "Docs"

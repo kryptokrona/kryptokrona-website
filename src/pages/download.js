@@ -12,6 +12,10 @@ import JoinCommunity from "../components/CTACommunity";
 import Layout from "../components/Layout";
 import { useEffect } from "react";
 import { Link } from "gatsby";
+import { AiFillApple, AiFillWindows } from 'react-icons/ai'
+import { IoLogoGooglePlaystor, IoterminalSharp } from 'react-icons/io'
+import { FaAppStoreIos } from 'react-icons/fa'
+
 
 export default function DownloadPage() {
   useEffect(() => {
@@ -30,23 +34,20 @@ export default function DownloadPage() {
           <Link href="">Downloads</Link>
         </Heading>
         <Heading fontSize="3xl">
-          <Link href="">Wallets</Link>
+          <Link href="">Wallets 💳</Link>
         </Heading>
-        <Wrap justify="start">
-          <Link href="">
+        <Wrap  justify="start">
             <WrapItem
-              width={{
-                base: "100%",
-                xl: "25.6rem",
-                lg: "49%",
-                md: "49%",
-                sm: "100%",
-              }}
-              padding="8"
-              borderRadius="10"
-              border="2px solid"
-              borderColor={useColorModeValue("black", "white")}
-            >
+            display='inline-block'
+        maxH='150px'
+        width={{ base: "100%", xl: "25.6rem", lg: "49%", md: "49%", sm: "100%" }}
+        padding="7"
+        borderRadius="10"
+        border="2px solid"
+        borderColor={useColorModeValue("black", "white")}
+        _hover={useColorModeValue('gray.700','gray.200')}
+      >
+            <Link href="">
               <VStack align="start" spacing="3">
                 <Heading color={useColorModeValue("black", "white")}>
                   Mac
@@ -55,8 +56,9 @@ export default function DownloadPage() {
                   Got a macitosh?
                 </Text>
               </VStack>
+              <AiFillApple size='4rem' color='white'/>
+              </Link>
             </WrapItem>
-          </Link>
 
           <Link href="">
             <WrapItem
@@ -185,7 +187,7 @@ export default function DownloadPage() {
         </Wrap>
 
         <Heading fontSize="3xl">
-          <Link href="">Hugin</Link>
+          <Link href="">Hugin Messenger 🔥</Link>
         </Heading>
 
         <Wrap justify="start">

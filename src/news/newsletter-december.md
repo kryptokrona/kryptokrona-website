@@ -1,5 +1,5 @@
 ---
-slug: "/news/hugin-wp"
+slug: "/news/newsletter-december"
 date: "2019-05-04"
 title: "Newsletter - December"
 category: "News"

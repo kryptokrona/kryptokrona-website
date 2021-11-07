@@ -1,7 +1,7 @@
 ---
-slug: "/guides/hugin-wp"
+slug: "/guides/run-a-node"
 date: "2019-05-04"
-title: "Run a node"
+title: "Run a public node"
 category: "Guide"
 color: "yellow"
 author: "Knugen"
