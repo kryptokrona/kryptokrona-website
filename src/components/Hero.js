@@ -5,21 +5,22 @@ import { Button } from "@chakra-ui/button";
 import { Img } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import AlertBanner from "./AlertBanner";
-import xkrart from "../images/xkrart.svg";
+import xkrartdark from "../images/xkrart2.svg";
+import xkrartlight from "../images/xkrart3.svg";
 
 const Hero = () => {
   return (
-    <Container maxW="7xl" overflow="hidden" px="0">
-      <AlertBanner />
-      <Box width="100%" maxW="7xl">
+    <Container maxW="7xl" overflow="hidden" mt='20px' px='0'>
+      <Box width="100%" maxW="7xl"> 
         <Img
-          src={xkrart}
+          src={useColorModeValue({xkrartdark}, {xkrartlight})}
           maxW="7xl"
-          borderRadius="10"
+          borderRadius={{xl:'10px', lg:0}}
           width="100%"
           objectFit="cover"
           objectPosition="center"
         ></Img>
+              <AlertBanner/>
       </Box>
       <Stack px={{ base: 5, xl: 0, sm: 10 }} mt="5">
         <Heading
