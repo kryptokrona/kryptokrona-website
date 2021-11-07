@@ -1,12 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import PostCard from '../components/PostCard';
+import PostCard from './PostCard';
 import { Container, Heading, Wrap } from '@chakra-ui/layout';
-import CTACommunity from '../components/CTACommunity';
 
 
-const CollectionPage = ({
+const Collection = ({
   data: {
     allMarkdownRemark: { edges },
   },
@@ -26,10 +24,10 @@ const CollectionPage = ({
   ) 
 }
 
-export default CollectionPage
+export default Collection
 
 export const pageQuery = graphql`
-  query {
+query {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {

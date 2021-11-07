@@ -249,23 +249,28 @@ import {
       children: [
         {
           label: 'Learn more',
-          subLabel: 'Lets find some coins!',
+          subLabel: 'You got my attention..',
           href: '/info',
         },
         {
           label: 'Mining',
-          subLabel: 'Lets find some coins!',
+          subLabel: 'Lets find some coins, shall we?',
           href: '/mining',
         },
         {
           label: 'Trading',
-          subLabel: 'I want to spend my fiat!',
+          subLabel: 'I want to spend my shit fiat!',
           href: '/buy',
         },
         {
+          label: 'Guides',
+          subLabel: 'Looking for help?',
+          href: '/guides',
+        },
+        {
           label: 'Docs',
-          subLabel: 'Interested to learn more?',
-          href: '/collection',
+          subLabel: 'We like research, do you?',
+          href: '/docs',
         },
       ],
     },
