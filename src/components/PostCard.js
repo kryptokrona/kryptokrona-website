@@ -11,7 +11,7 @@ const PostCard = ({ post }) => {
 
 
     return (
-<WrapItem padding='8' borderRadius='10' border='2px solid' borderColor={useColorModeValue('black', 'white')}>
+<WrapItem width={{base: '100%', xl: '25.6rem', lg:'49%', md: '49%', sm: '100%'}} padding='8' borderRadius='10' border='2px solid' borderColor={useColorModeValue('black', 'white')}>
         <Link to={post.frontmatter.slug}>
             <VStack align='start' spacing='3'>
             <Heading color={useColorModeValue('black', 'white')}>{post.frontmatter.title}</Heading>

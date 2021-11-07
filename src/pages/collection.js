@@ -17,7 +17,7 @@ const CollectionPage = ({
   return(
     
         <Layout>
-          <Container maxW='7xl' px={{base: 5, xl: 0, sm: 10,}} mt='5'>
+          <Container maxW='7xl' mt='5'>
           <Heading fontSize='6xl'>Docs</Heading>
           <Wrap mt='10' justify='start'>
           {Posts}
