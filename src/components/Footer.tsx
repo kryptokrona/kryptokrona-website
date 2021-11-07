@@ -66,17 +66,17 @@ export default function Footer() {
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'start'}>
             <ListHeader>Links</ListHeader>
-            <Link href={'#'}>About Us</Link>
-            <Link href={'#'}>Blog</Link>
-            <Link href={'#'}>Careers</Link>
-            <Link href={'#'}>Contact Us</Link>
+            <Link href={'#'}>Download</Link>
+            <Link href={'#'}>Hugin</Link>
+            <Link href={'#'}>Info</Link>
+            <Link href={'#'}>Contact</Link>
           </Stack>
 
           <Stack align={'start'}>
             <ListHeader>Community</ListHeader>
-            <Link href={'#'}>Help Center</Link>
-            <Link href={'#'}>Safety Center</Link>
-            <Link href={'#'}>Community Guidelines</Link>
+            <Link href={'#'}>Hugin</Link>
+            <Link href={'#'}>Discord</Link>
+            <Link href={'#'}>Telegram</Link>
           </Stack>
 
           <Stack align={'start'}>
