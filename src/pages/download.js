@@ -2,9 +2,6 @@ import {
   Container,
   Heading,
   Wrap,
-  WrapItem,
-  VStack,
-  Text,
 } from "@chakra-ui/layout";
 import * as React from "react";
 import JoinCommunity from "../components/CTACommunity";

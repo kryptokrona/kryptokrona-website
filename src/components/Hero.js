@@ -5,8 +5,8 @@ import { Button } from "@chakra-ui/button";
 import { Img } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import AlertBanner from "./AlertBanner";
-import xkrartdark from "../images/xkrart2.svg";
-import xkrartlight from "../images/xkrart3.svg";
+import xkrartdark from "../images/xkrartsy.png";
+import xkrartlight from "../images/xkrartsy.png";
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
           maxW="7xl"
           borderRadius={{xl:'10px', lg:0}}
           width="100%"
-          height='55vh'
+          maxH='500px'
           objectFit="cover"
           objectPosition="center"
         ></Img>
