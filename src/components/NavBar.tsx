@@ -88,7 +88,7 @@ export default function NavBar() {
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
               <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                {colorMode === "light" ? <MoonIcon className='textrgb' /> : <SunIcon className='textrgb'/>}
               </Button>
             </Stack>
           </Flex>
@@ -285,22 +285,23 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: "Trading",
         subLabel: "I want to spend my shit fiat!",
-        href: "/buy",
+        href: "/trading",
       },
       {
         label: "Guides",
-        subLabel: "Looking for help?",
+        subLabel: "Looking for guidance?",
         href: "/guides",
       },
       {
         label: "Docs",
-        subLabel: "We like research, do you?",
+        subLabel: "Sorry, I can't read.",
         href: "/docs",
       },
     ],
   },
   {
     label: "Download",
+    href: "/download",
     children: [
       {
         label: "Hugin Messenger",

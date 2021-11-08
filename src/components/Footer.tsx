@@ -59,7 +59,7 @@ const SocialButton = ({
 
 export default function Footer() {
   return (
-    <Box color={useColorModeValue("black", "white")}>
+    <Box color={useColorModeValue("black", "white")} mt='5rem'>
       <Container
         as={Stack}
         maxW="7xl"
@@ -92,7 +92,7 @@ export default function Footer() {
           <Stack align={"start"}>
             <ListHeader>Edit Page</ListHeader>
             <Link href="https://github.com/kryptokrona/kryptokrona-website">
-              <Button colorScheme="purple">
+              <Button bg="#805ad5" color='#fff'>
                 <BsGithub size="1.2rem" />
                 <Text padding="3">Github</Text>
               </Button>

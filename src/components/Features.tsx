@@ -19,11 +19,11 @@ import { useColorModeValue } from "@chakra-ui/color-mode";
 
 export default function Features() {
   return (
-    <Container maxW="7xl" my="8rem" px={{ base: 5, xl: 0, sm: 10 }}>
+    <Container maxW="7xl" mt="10rem" p='0'>
       <Box>
-        <Stack spacing={4} as={Container} maxW={"7xl"} textAlign={"start"}>
+        <Stack spacing={4} as={Container} maxW={"7xl"} textAlign={"start"} px={{ base: 5, xl: 0, sm: 10 }}>
           <Heading fontSize={{ base: "4xl", xl: "5xl" }}>
-            Why Kryptokrona? 🤔
+            Why Kryptokrona?
           </Heading>
           <Text
             color={useColorModeValue("black", "White")}
@@ -35,10 +35,10 @@ export default function Features() {
           </Text>
         </Stack>
 
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10} py="5">
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10} py="5" px={{ base: 5, xl: 0, sm: 10 }}>
           <HStack align={"top"}>
-            <Box color={useColorModeValue("black", "White")} px={2}>
-              <BiLockAlt size="1.5rem" />
+            <Box color={useColorModeValue("black", "White")} px={0}>
+              <BiLockAlt size="1.5rem" color='#5f86f2'/>
             </Box>
             <VStack align={"start"}>
               <Text fontWeight={600}>Private money</Text>
@@ -49,8 +49,8 @@ export default function Features() {
             </VStack>
           </HStack>
           <HStack align={"top"}>
-            <Box color={useColorModeValue("black", "White")} px={2}>
-              <IoMdPeople size="1.5rem" />
+            <Box color={useColorModeValue("black", "White")} px={0}>
+              <IoMdPeople size="1.5rem" color='#a65ff2'/>
             </Box>
             <VStack align={"start"}>
               <Text fontWeight={600}>Your currency</Text>
@@ -61,8 +61,8 @@ export default function Features() {
             </VStack>
           </HStack>
           <HStack align={"top"}>
-            <Box color={useColorModeValue("black", "White")} px={2}>
-              <BiSend size="1.5rem" />
+            <Box color={useColorModeValue("black", "White")} px={0}>
+              <BiSend size="1.5rem" color='#f25fd0'/>
             </Box>
             <VStack align={"start"}>
               <Text fontWeight={600}>Peer to peer</Text>
@@ -73,8 +73,8 @@ export default function Features() {
             </VStack>
           </HStack>
           <HStack align={"top"}>
-            <Box color={useColorModeValue("black", "White")} px={2}>
-              <HiCubeTransparent size="1.5rem" />
+            <Box color={useColorModeValue("black", "White")} px={0}>
+              <HiCubeTransparent size="1.5rem" color='#f25f61'/>
             </Box>
             <VStack align={"start"}>
               <Text fontWeight={600}>Transparency</Text>
@@ -85,8 +85,8 @@ export default function Features() {
             </VStack>
           </HStack>
           <HStack align={"top"}>
-            <Box color={useColorModeValue("black", "White")} px={2}>
-              <BsLightningChargeFill size="1.5rem" />
+            <Box color={useColorModeValue("black", "White")} px={0}>
+              <BsLightningChargeFill size="1.5rem" color='#f2cb5f'/>
             </Box>
             <VStack align={"start"}>
               <Text fontWeight={600}>Quick & efficient</Text>
@@ -97,8 +97,8 @@ export default function Features() {
             </VStack>
           </HStack>
           <HStack align={"top"}>
-            <Box color={useColorModeValue("black", "White")} px={2}>
-              <Icon as={CheckIcon} />
+            <Box color={useColorModeValue("black", "White")} px={0}>
+              <Icon as={CheckIcon} color='#abf25f'/>
             </Box>
             <VStack align={"start"}>
               <Text fontWeight={600}>Transparency</Text>
@@ -109,8 +109,8 @@ export default function Features() {
             </VStack>
           </HStack>
           <HStack align={"top"}>
-            <Box color={useColorModeValue("black", "White")} px={2}>
-              <Icon as={CheckIcon} />
+            <Box color={useColorModeValue("black", "White")} px={0}>
+              <Icon as={CheckIcon} color='#5ff281'/>
             </Box>
             <VStack align={"start"}>
               <Text fontWeight={600}>Transparency</Text>
@@ -121,8 +121,8 @@ export default function Features() {
             </VStack>
           </HStack>
           <HStack align={"top"}>
-            <Box color={useColorModeValue("black", "White")} px={2}>
-              <BiSupport size="1.5rem" />
+            <Box color={useColorModeValue("black", "White")} px={0}>
+              <BiSupport size="1.5rem" color='#5ff2f0'/>
             </Box>
             <VStack align={"start"}>
               <Text fontWeight={600}>Technical support</Text>

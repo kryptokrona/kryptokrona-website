@@ -1,37 +1,79 @@
 @keyframes rgb {
-    0%, 100% {
-      background: #5f86f2;
-    }
-    12.5% {
-      background: #a65ff2;
-    }
-    25% {
-      background: #f25fd0;
-    }
-    37.5% {
-      background: #f25f61;
-    }
-    50% {
-      background: #f2cb5f;
-    }
-    62.5% {
-      background: #abf25f;
-    }
-    75% {
-      background: #5ff281;
-    }
-    87.5% {
-      background: #5ff2f0;
-    }
-  }
-  .rgb {
-  
+  0%,
+  100% {
     background: #5f86f2;
-    -webkit-animation: rgb 30s ease infinite;
-    -moz-animation: rgb 30s ease infinite;
-    animation: rgb 30s ease infinite;
-  } 
-
-  code {
-    color: #5ff281!important;
   }
+  12.5% {
+    background: #a65ff2;
+  }
+  25% {
+    background: #f25fd0;
+  }
+  37.5% {
+    background: #f25f61;
+  }
+  50% {
+    background: #f2cb5f;
+  }
+  62.5% {
+    background: #abf25f;
+  }
+  75% {
+    background: #5ff281;
+  }
+  87.5% {
+    background: #5ff2f0;
+  }
+}
+
+.rgb {
+  background: #5f86f2;
+  -webkit-animation: rgb 20s ease infinite;
+  -moz-animation: rgb 20s ease infinite;
+  animation: rgb 20s ease infinite;
+}
+
+@keyframes textrgb {
+  0%,
+  100% {
+    color: #5ff2f0;
+  }
+  12.5% {
+    color: #5ff281;
+  }
+  25% {
+    color: #abf25f;
+  }
+  37.5% {
+    color: #f2cb5f;
+  }
+  50% {
+    color: #f25f61;
+  }
+  62.5% {
+    color: #f25fd0;
+  }
+  75% {
+    color: #a65ff2;
+  }
+  87.5% {
+    color: #5f86f2;
+  }
+}
+
+.textrgb {
+  color: #5ff2f0;
+  -webkit-animation: rgb 30s ease infinite;
+  -moz-animation: rgb 30s ease infinite;
+  animation: textrgb 30s ease infinite;
+}
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

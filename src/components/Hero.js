@@ -5,33 +5,37 @@ import { Button } from "@chakra-ui/button";
 import { Img } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import AlertBanner from "./AlertBanner";
-import xkrartdark from "../images/xkrartsy.png";
-import xkrartlight from "../images/xkrartsy.png";
+import xkrartdark from "../images/xkr.svg";
+import xkrartlight from "../images/xkr.svg";
 
 const Hero = () => {
   return (
-    <Container maxW="7xl" overflow="hidden" mt='15px' px='0'>
-      <Box width="100%" maxW="7xl"> 
+    <Container maxW="7xl" overflow="hidden" mt="15px" px="0">
+      <Box>
         <Img
+          className='rgb'
           src={useColorModeValue(xkrartlight, xkrartdark)}
-          maxW="7xl"
-          borderRadius={{xl:'10px', lg:0}}
+          borderRadius={{ xl: "10px", lg: 0 }}
           width="100%"
-          maxH='500px'
+          minH="380px"
+          maxH="500px"
           objectFit="cover"
           objectPosition="center"
+          opacity='1'
+          transition= 'opacity 500ms ease 0s'
         ></Img>
-              <AlertBanner/>
+        <AlertBanner />
       </Box>
-      <Stack px={{ base: 5, xl: 0, sm: 10 }} mt="5">
+      <Stack px={{ base: 5, xl: 0, sm: 10 }}>
         <Heading
           align="start"
-          fontSize={{ base: "4xl", sm: "5xl", lg: "6xl", xl: "7xl" }}
+          fontSize={{ base: "5xl", sm: "4xl", md: '5xl',lg: "6xl", xl: "7xl" }}
           py="3"
+          mt='5'
         >
           A Nordic cryptocurrency for the future
         </Heading>
-        <Text align="start" fontSize={{ base: "md", lg: "lg", xl: "xl" }}>
+        <Text align="start" fontSize={{ base: "lg", lg: "lg", xl: "xl" }}>
           On 2 April 2019, Kryptokrona was launched to secure and simplify our
           future economic system. Sending and receiving money should not be
           expensive or slow. We work with open source code that allows you to be

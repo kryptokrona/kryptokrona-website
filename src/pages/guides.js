@@ -16,7 +16,7 @@ const GuidesPage = ({
 
   return (
     <Layout>
-      <Container mb="5rem" maxW="7xl" mt="5" px={{ base: 5, xl: 0, sm: 10 }}>
+      <Container mb="5rem" maxW="7xl" mt='3rem' px={{ base: 5, xl: 0, sm: 10 }}>
         <Heading fontSize="6xl">Guides</Heading>
         <Wrap mt="10" justify="start">
           {Posts}

@@ -17,11 +17,11 @@ import { Link as GatsbyLink } from "gatsby";
 
 const CTACommunity = () => {
   return (
-    <Container maxW="7xl" px={{ base: 5, xl: 0, sm: 10 }}>
-      <Stack marginTop="5" spacing="5">
+    <Container maxW="7xl" px={{ base: 5, xl: 0, sm: 10 }} mt='10rem'>
+      <Stack spacing="5">
         <Heading
           align="start"
-          fontSize={{ base: "4xl", sm: "5xl", lg: "6xl", xl: "7xl" }}
+          fontSize={{ base: "4xl", xl: "5xl" }}
         >
           Join our community
         </Heading>

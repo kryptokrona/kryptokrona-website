@@ -22,10 +22,10 @@ const AlertBanner = () => {
       display="flex"
       bg="#00000070"
     >
-      <AlertIcon color='#fff' />
+      <AlertIcon color='#fff' className='blink_me'/>
       <Text color='#fff'>New wallet update 🎉 </Text>
       <Link>
-        <Button size="sm" position="absolute" right='12px' top="8px" bg="#00000080" color='#fff' className='rgb' marginTop='5px'>
+        <Button size="sm" position="absolute" right='12px' top="8px" bg="#ffffff" color='#000' marginTop='5px'>
           Download
         </Button>
       </Link>

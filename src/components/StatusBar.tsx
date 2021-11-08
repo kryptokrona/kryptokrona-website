@@ -21,15 +21,16 @@ interface StatsCardProps {
   stat: string;
   icon: ReactNode;
   id: string;
+  bcolor: string;
 }
 function StatsCard(props: StatsCardProps) {
-  const { title, stat, icon, id } = props;
+  const { title, stat, icon, id, bcolor} = props;
   return (
     <Stat
       px={{ base: 2, md: 4 }}
       py={"5"}
       border={"2px solid"}
-      borderColor={useColorModeValue("black", "white")}
+      borderColor={bcolor}
       rounded={"lg"}
     >
       <Flex justifyContent={"space-between"}>
@@ -43,7 +44,7 @@ function StatsCard(props: StatsCardProps) {
         </Box>
         <Box
           my={"auto"}
-          color={useColorModeValue("gray.800", "gray.200")}
+          color={useColorModeValue("blac", "white")}
           alignContent={"center"}
         >
           {icon}
@@ -81,7 +82,7 @@ export default function StatusBar() {
     <Box
       maxW="7xl"
       mx={"auto"}
-      my="5rem"
+      mt='5rem'
       pb={10}
       px={{ base: 5, xl: 0, sm: 10 }}
     >
@@ -99,24 +100,28 @@ export default function StatusBar() {
           stat={"5,000"}
           icon={<FaSquare size={"3em"} />}
           id={"height"}
+          bcolor='#5f86f2'
         />
         <StatsCard
           title={"Hashrate"}
           stat={"1,000"}
           icon={<MdSpeed size={"3em"} />}
           id={"hashrate"}
+          bcolor='#f25fd0'
         />
         <StatsCard
           title={"Nodes"}
           stat={"7"}
           icon={<FaNetworkWired size={"3em"} />}
           id={"nodes"}
+          bcolor='#f2cb5f'
         />
         <StatsCard
           title={"Price"}
           stat={"7"}
           icon={<BiDollar size={"3em"} />}
           id={"price"}
+          bcolor='#5ff2f0'
         />
       </SimpleGrid>
     </Box>

@@ -14,7 +14,7 @@ const CTAhugin = () => {
       <Stack spacing="10">
         <Heading
           align="start"
-          fontSize={{ base: "4xl", sm: "5xl", lg: "6xl", xl: "7xl" }}
+          fontSize={{ base: "4xl", xl: "5xl" }}
         >
           Hugin Messenger
         </Heading>
