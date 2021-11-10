@@ -12,6 +12,9 @@ const theme = extendTheme({
   initialColorMode: "dark",
   useSystemColorMode: true,
   colors: {
+    white: {
+      900: "#ffffffdb"
+    },
     gray: {
       50: "#F2F2F2",
       100: "#DBDBDB",
@@ -21,7 +24,7 @@ const theme = extendTheme({
       500: "#808080",
       600: "#666666",
       700: "#4D4D4D",
-      800: "#202020",
+      800: "#222222"
     }
   }
 })
