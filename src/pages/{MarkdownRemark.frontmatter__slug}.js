@@ -12,7 +12,7 @@ export default function Template({
   return (
     <Layout>
       <Container maxW="7xl">
-        <Heading fontSize="6xl">{frontmatter.title}</Heading>
+        <Heading fontSize="6xl" mt='3rem'>{frontmatter.title}</Heading>
         <Text> Uploaded : {frontmatter.date}</Text>
         <div
           className="blog-post-content"
