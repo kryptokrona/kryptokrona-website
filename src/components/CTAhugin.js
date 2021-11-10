@@ -14,7 +14,7 @@ const CTAhugin = () => {
           <Heading align="start" fontSize={{ base: "4xl", xl: "5xl" }}>
             Hugin Messenger
           </Heading>
-          <Text fontSize={{ base: "md", lg: "lg", xl: "xl" }}>
+          <Text fontSize={{ base: "md", lg: "lg", xl: "xl" }} pr={{base: '0', lg:'10'}}>
             Hugin is a messaging service where messages are stored on the
             kryptokrona blockchain. Your messages are secured with industry
             leading encryption so that only you and your chat partner have the
