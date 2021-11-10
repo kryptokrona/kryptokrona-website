@@ -11,8 +11,7 @@ const PostCard = ({ post }) => {
       width={{ base: "100%", xl: "25.6rem", lg: "49%", md: "48%", sm: "100%" }}
       padding="7"
       borderRadius="10"
-      border="2px solid"
-      borderColor={useColorModeValue("black", "white")}
+      bg={useColorModeValue('#dddddd', '#303030')}
       _hover={useColorModeValue('gray.700','gray.200')}
     ><Link to={post.frontmatter.slug}>
         <VStack spacing='3' align="start">

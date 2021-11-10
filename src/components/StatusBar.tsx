@@ -8,29 +8,27 @@ import {
   Stat,
   StatLabel,
   StatNumber,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { Heading } from "@chakra-ui/layout";
 import { FaNetworkWired, FaSquare } from "react-icons/fa";
 import { MdSpeed } from "react-icons/md";
 import { BiDollar } from "react-icons/bi";
+import { useColorModeValue } from '@chakra-ui/color-mode';
 
 interface StatsCardProps {
   title: string;
   stat: string;
   icon: ReactNode;
   id: string;
-  bcolor: string;
 }
 function StatsCard(props: StatsCardProps) {
-  const { title, stat, icon, id, bcolor} = props;
+  const { title, stat, icon, id} = props;
   return (
     <Stat
       px={{ base: 2, md: 4 }}
       py={"5"}
-      border={"2px solid"}
-      borderColor={bcolor}
+      bg={useColorModeValue('#dddddd', "#303030")}
       rounded={"lg"}
     >
       <Flex justifyContent={"space-between"}>
@@ -44,7 +42,7 @@ function StatsCard(props: StatsCardProps) {
         </Box>
         <Box
           my={"auto"}
-          color={useColorModeValue("blac", "white")}
+          color={useColorModeValue("black", "white")}
           alignContent={"center"}
         >
           {icon}
@@ -82,7 +80,7 @@ export default function StatusBar() {
     <Box
       maxW="7xl"
       mx={"auto"}
-      mt='5rem'
+      mt='10rem'
       pb={10}
       px={{ base: 5, xl: 0, sm: 10 }}
     >
@@ -97,31 +95,27 @@ export default function StatusBar() {
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard
           title={"Height"}
-          stat={"5,000"}
+          stat={"-"}
           icon={<FaSquare size={"3em"} />}
           id={"height"}
-          bcolor='#5f86f2'
         />
         <StatsCard
           title={"Hashrate"}
-          stat={"1,000"}
+          stat={"-"}
           icon={<MdSpeed size={"3em"} />}
           id={"hashrate"}
-          bcolor='#f25fd0'
         />
         <StatsCard
           title={"Nodes"}
-          stat={"7"}
+          stat={"-"}
           icon={<FaNetworkWired size={"3em"} />}
           id={"nodes"}
-          bcolor='#f2cb5f'
         />
         <StatsCard
           title={"Price"}
-          stat={"7"}
+          stat={"-"}
           icon={<BiDollar size={"3em"} />}
           id={"price"}
-          bcolor='#5ff2f0'
         />
       </SimpleGrid>
     </Box>
