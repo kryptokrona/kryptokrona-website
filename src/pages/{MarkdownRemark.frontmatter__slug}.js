@@ -11,7 +11,7 @@ export default function Template({
 
   return (
     <Layout>
-      <Container maxW="7xl">
+      <Container maxW="7xl" px={{ base: 5, xl: 0, sm: 10 }}>
         <Heading fontSize="6xl" mt='3rem'>{frontmatter.title}</Heading>
         <Text> Uploaded : {frontmatter.date}</Text>
         <div
