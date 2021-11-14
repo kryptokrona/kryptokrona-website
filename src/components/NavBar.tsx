@@ -1,8 +1,7 @@
 import * as React from "react";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { Link as GatsbyLink } from "gatsby";
-import Whitelogo from '../images/whitelogo.svg'
-import Blacklogo from '../images/blacklogo.svg'
+import Whitelogo from "../images/whitelogo.svg";
+import Blacklogo from "../images/blacklogo.svg";
+
 import {
   Box,
   Flex,
@@ -29,7 +28,8 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { Link as GatsbyLink } from "gatsby";
 
 export default function NavBar() {
   const { isOpen, onToggle, onOpen, onClose } = useDisclosure();
@@ -37,7 +37,7 @@ export default function NavBar() {
 
   return (
     <Box>
-      <Container maxW="7xl" pt='10px'>
+      <Container maxW="7xl" pt="10px">
         <Flex
           bg={useColorModeValue("white", "gray.800")}
           color={useColorModeValue("gray.600", "white")}
@@ -87,8 +87,12 @@ export default function NavBar() {
 
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
-              <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <MoonIcon className='textrgb' /> : <SunIcon className='textrgb'/>}
+              <Button bg="00000000" onClick={toggleColorMode}>
+                {colorMode === "light" ? (
+                  <MoonIcon className="textrgb" />
+                ) : (
+                  <SunIcon className="textrgb" />
+                )}
               </Button>
             </Stack>
           </Flex>
@@ -196,7 +200,7 @@ const MobileNav = () => {
   return (
     <Stack
       bg={useColorModeValue("white", "gray.800")}
-      p={4}
+      p={2}
       display={{ md: "none" }}
     >
       {NAV_ITEMS.map((navItem) => (
