@@ -2,9 +2,15 @@ import * as React from "react";
 import JoinCommunity from "../components/CTACommunity";
 import Layout from "../components/Layout";
 import { Link } from "gatsby";
-import { Wrap, WrapItem, VStack, Heading, Text, Container } from "@chakra-ui/layout";
+import {
+  Wrap,
+  WrapItem,
+  VStack,
+  Heading,
+  Text,
+  Container,
+} from "@chakra-ui/layout";
 import { useColorModeValue } from "@chakra-ui/color-mode";
-
 
 const TradingPage = () => {
   return (
@@ -12,7 +18,6 @@ const TradingPage = () => {
       <Container mb="5rem" maxW="7xl" mt="3rem" px={{ base: 5, xl: 0, sm: 10 }}>
         <Heading fontSize="6xl">Trading</Heading>
         <Wrap mt="10" justify="start">
-
           <WrapItem
             minH="150px"
             width={{
@@ -24,10 +29,10 @@ const TradingPage = () => {
             }}
             padding="7"
             borderRadius="10"
-            border="2px solid"
-            borderColor={useColorModeValue("black", "white")}
+            bg={useColorModeValue("#dddddd", "#303030")}
+            _hover={useColorModeValue("gray.700", "gray.200")}
           >
-            <Link to='#'>
+            <Link to="#">
               <VStack spacing="3" align="start">
                 <Heading color={useColorModeValue("black", "white")}>
                   FreiExchange
@@ -50,10 +55,10 @@ const TradingPage = () => {
             }}
             padding="7"
             borderRadius="10"
-            border="2px solid"
-            borderColor={useColorModeValue("black", "white")}
+            bg={useColorModeValue("#dddddd", "#303030")}
+            _hover={useColorModeValue("gray.700", "gray.200")}
           >
-            <Link to='#'>
+            <Link to="#">
               <VStack spacing="3" align="start">
                 <Heading color={useColorModeValue("black", "white")}>
                   Exbitron
@@ -64,7 +69,6 @@ const TradingPage = () => {
               </VStack>
             </Link>
           </WrapItem>
-
         </Wrap>
       </Container>
       <JoinCommunity />
