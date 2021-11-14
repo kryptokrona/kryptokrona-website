@@ -2,7 +2,7 @@ import { Button } from "@chakra-ui/button";
 import { Text, Heading, Container, Stack } from "@chakra-ui/layout";
 import * as React from "react";
 import { Img } from "@chakra-ui/image";
-import Hugin from "../images/hugin.png";
+import Wallet from "../images/desktop-wallet.png";
 import { Link as GatsbyLink } from "gatsby";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 
@@ -18,7 +18,7 @@ const CTAwallet = () => {
           xs: "column",
         }}
       >
-        <Stack align="start" spacing={{base: '5', lg: '10'}} width={{ base: "100%", lg: "50%" }}>
+        <Stack justifyContent="center" align="start" spacing={{base: '5', lg: '10'}} width={{ base: "100%", lg: "50%" }}>
           <Heading fontSize="4xl">Wallet</Heading>
           <Text fontSize={{ base: "md", lg: "lg", xl: "xl" }} pr={{base: '0', lg:'10'}}>
             You store your Kryptokrona using a special program, a so-called
@@ -27,7 +27,7 @@ const CTAwallet = () => {
             wallet.
           </Text>
           <Stack width={{base: '100%', lg:'50%'}} display={{base: 'flex', lg: 'none'}}>
-            <Img maxW="100%" align="start" src={Hugin} />
+            <Img maxW="100%" align="start" src={Wallet} />
           </Stack>
           <Stack alignSelf="start" direction="row" pt="5">
             <GatsbyLink to="/hugin">
@@ -53,7 +53,7 @@ const CTAwallet = () => {
           width={{ base: "50%", lg: "50%" }}
           display={{ base: "none", lg: "flex" }}
         >
-          <Img maxW="100%" align="start" src={Hugin} />
+          <Img maxW="100%" align="start" src={Wallet} />
         </Stack>
       </Stack>
     </Container>
