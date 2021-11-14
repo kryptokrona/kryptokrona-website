@@ -12,9 +12,6 @@ const theme = extendTheme({
   initialColorMode: "dark",
   useSystemColorMode: true,
   colors: {
-    white: {
-      900: "#ffffffdb"
-    },
     gray: {
       50: "#F2F2F2",
       100: "#DBDBDB",
@@ -26,7 +23,11 @@ const theme = extendTheme({
       700: "#4D4D4D",
       800: "#222222"
     }
-  }
+  },
+  fonts: {
+    heading: "Montserrat",
+    body: "Roboto mono",
+  },
 })
 
 export default theme
