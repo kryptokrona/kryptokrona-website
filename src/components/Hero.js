@@ -6,7 +6,7 @@ import { Img } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import AlertBanner from "./AlertBanner";
 import xkrartdark from "../images/xkr.svg";
-import xkrartlight from "../images/xkr.svg";
+import xkrartlight from "../images/xkrwhite.svg";
 
 const Hero = () => {
   return (
