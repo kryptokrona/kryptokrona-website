@@ -41,7 +41,7 @@ export default function Features() {
               <BiLockAlt size="1.5rem" color='#5f86f2'/>
             </Box>
             <VStack align={"start"}>
-              <Text fontWeight={600}>Private money</Text>
+            <Heading fontSize="lg">Private money</Heading>
               <Text color={useColorModeValue("black", "White")}>
                 All transactions are private. Users can share view keys to give
                 trusted parties access to to share account information.
@@ -53,7 +53,7 @@ export default function Features() {
               <IoMdPeople size="1.5rem" color='#a65ff2'/>
             </Box>
             <VStack align={"start"}>
-              <Text fontWeight={600}>Your currency</Text>
+            <Heading fontSize="lg">Your currency</Heading>
               <Text color={useColorModeValue("black", "White")}>
                 You can assist Kryptokrona. Through mining you can create
                 Kryptokrona and store them wherever you want to.
@@ -65,7 +65,7 @@ export default function Features() {
               <BiSend size="1.5rem" color='#f25fd0'/>
             </Box>
             <VStack align={"start"}>
-              <Text fontWeight={600}>Peer to peer</Text>
+            <Heading fontSize="lg">Peer to peer</Heading>
               <Text color={useColorModeValue("black", "White")}>
                 The Kryptokrona isn’t dependent on central banks or servers,
                 thus less fragile than todays systems.
@@ -77,7 +77,7 @@ export default function Features() {
               <HiCubeTransparent size="1.5rem" color='#f25f61'/>
             </Box>
             <VStack align={"start"}>
-              <Text fontWeight={600}>Transparency</Text>
+            <Heading fontSize="lg">Transparency</Heading>
               <Text color={useColorModeValue("black", "White")}>
                 Our source code is open for everyone to view and our community
                 is open for anyone interested.
@@ -89,7 +89,7 @@ export default function Features() {
               <BsLightningChargeFill size="1.5rem" color='#f2cb5f'/>
             </Box>
             <VStack align={"start"}>
-              <Text fontWeight={600}>Quick & efficient</Text>
+            <Heading fontSize="lg">Quick & efficient</Heading>
               <Text color={useColorModeValue("black", "White")}>
                 Our network processes new transactions every 90 seconds, in
                 comparison to Bitcoins 10 minute delay.
@@ -101,7 +101,7 @@ export default function Features() {
               <Icon as={CheckIcon} color='#abf25f'/>
             </Box>
             <VStack align={"start"}>
-              <Text fontWeight={600}>Transparency</Text>
+            <Heading fontSize="lg">Transparency</Heading>
               <Text color={useColorModeValue("black", "White")}>
                 Our source code is open for everyone to view and our community
                 is open for anyone interested.
@@ -113,7 +113,7 @@ export default function Features() {
               <Icon as={CheckIcon} color='#5ff281'/>
             </Box>
             <VStack align={"start"}>
-              <Text fontWeight={600}>Transparency</Text>
+              <Heading fontSize="lg">Transparency</Heading>
               <Text color={useColorModeValue("black", "White")}>
                 Our source code is open for everyone to view and our community
                 is open for anyone interested.
@@ -125,10 +125,10 @@ export default function Features() {
               <BiSupport size="1.5rem" color='#5ff2f0'/>
             </Box>
             <VStack align={"start"}>
-              <Text fontWeight={600}>Technical support</Text>
+            <Heading fontSize="lg">Technical support</Heading>
               <Text color={useColorModeValue("black", "White")}>
-                You can get assistance with Kryptokrona, around the clock, every
-                day of the week in our Discord server. Welcome for discussions.
+                Get assistance with Kryptokrona, around the clock, every
+                day of the week.
               </Text>
             </VStack>
           </HStack>
