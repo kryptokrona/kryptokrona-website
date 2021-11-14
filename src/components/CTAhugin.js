@@ -10,7 +10,7 @@ const CTAhugin = () => {
   return (
     <Container maxW="7xl" mt="10rem" px={{ base: 5, xl: 0, sm: 10 }}>
       <Stack direction={{ xl: 'row', lg: "row", md: "column", sm: 'column', xs: 'column' }}>
-        <Stack align='start' spacing={{base: '5', lg: '10'}}  width={{base: '100%', lg: '50%'}}>
+        <Stack align='start' spacing={{base: '3', lg: '5'}}  width={{base: '100%', lg: '50%'}}>
           <Heading align="start" fontSize={{ base: "4xl", xl: "5xl" }}>
             Hugin Messenger
           </Heading>
