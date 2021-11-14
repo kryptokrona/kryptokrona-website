@@ -16,6 +16,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { FaTwitter, FaGithub, FaDiscord } from "react-icons/fa";
+import { Heading } from '@chakra-ui/layout';
 
 const ListHeader = ({ children }: { children: ReactNode }) => {
   return (
@@ -68,7 +69,7 @@ export default function Footer() {
       >
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={"start"}>
-            <ListHeader>Links</ListHeader>
+            <Heading fontSize="md">Links</Heading>
             <Link href={"#"}>Download</Link>
             <Link href={"#"}>Hugin</Link>
             <Link href={"/news"}>News</Link>
@@ -76,21 +77,21 @@ export default function Footer() {
           </Stack>
 
           <Stack align={"start"}>
-            <ListHeader>Community</ListHeader>
+            <Heading fontSize="md">Community</Heading>
             <Link href={"#"}>Hugin</Link>
             <Link href={"#"}>Discord</Link>
             <Link href={"#"}>Telegram</Link>
           </Stack>
 
           <Stack align={"start"}>
-            <ListHeader>Analytics</ListHeader>
+            <Heading fontSize="md">Analytics</Heading>
             <Link href={"https://app.splitbee.io/public/kryptokrona.org"}>
               <Img src="https://chakra-templates.dev/_next/image?url=https%3A%2F%2Fsplitbee.io%2Fsplitbee-badge.svg&w=256&q=75" />
             </Link>
           </Stack>
 
           <Stack align={"start"}>
-            <ListHeader>Edit Page</ListHeader>
+            <Heading fontSize="md" >Edit Page</Heading>
             <Link href="https://github.com/kryptokrona/kryptokrona-website">
               <Button bg="#805ad5" color='#fff'>
                 <BsGithub size="1.2rem" />
