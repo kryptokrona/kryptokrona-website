@@ -1,6 +1,7 @@
 import * as React from "react";
 import Whitelogo from "../images/whitelogo.svg";
 import Blacklogo from "../images/blacklogo.svg";
+import { Heading } from "@chakra-ui/layout";
 
 import {
   Box,
@@ -170,13 +171,13 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       >
         <Stack direction={"row"} align={"center"}>
           <Box>
-            <Text
+            <Heading
               transition={"all .3s ease"}
               _groupHover={{ color: useColorModeValue("black", "grey") }}
-              fontWeight={500}
+              fontSize='md'
             >
               {label}
-            </Text>
+            </Heading>
             <Text fontSize={"sm"}>{subLabel}</Text>
           </Box>
           <Flex
@@ -200,7 +201,7 @@ const MobileNav = () => {
   return (
     <Stack
       bg={useColorModeValue("white", "gray.800")}
-      p={2}
+      p={4}
       display={{ md: "none" }}
     >
       {NAV_ITEMS.map((navItem) => (
