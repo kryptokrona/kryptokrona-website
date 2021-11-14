@@ -1,6 +1,8 @@
 import * as React from "react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Link as GatsbyLink } from "gatsby";
+import Whitelogo from '../images/whitelogo.svg'
+import Blacklogo from '../images/blacklogo.svg'
 import {
   Box,
   Flex,
@@ -27,6 +29,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+
 
 export default function NavBar() {
   const { isOpen, onToggle, onOpen, onClose } = useDisclosure();
@@ -71,10 +74,7 @@ export default function NavBar() {
                 <Link href="/#">
                   <Img
                     height="7"
-                    src={useColorModeValue(
-                      "https://raw.githubusercontent.com/kryptokrona/Styleguide/66d56e5945d9f7a758d8f899f4e00bff5e97fec1/Logo/Black%20-%20logo.svg",
-                      "https://raw.githubusercontent.com/kryptokrona/Styleguide/66d56e5945d9f7a758d8f899f4e00bff5e97fec1/Logo/White%20-%20logo.svg"
-                    )}
+                    src={useColorModeValue(Blacklogo, Whitelogo)}
                   ></Img>
                 </Link>
               </GatsbyLink>
