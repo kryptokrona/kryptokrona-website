@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 
-export const SEO = (title) => {
+export const Seo = (title) => {
   return (
     <div>
       <Helmet htmlAttributes>
