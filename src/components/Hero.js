@@ -33,7 +33,7 @@ const Hero = () => {
           py="3"
           mt='5'
         >
-          A Nordic cryptocurrency for the future
+          A Nordic cryptocurrency for the future.
         </Heading>
         <Text align="start" fontSize={{ base: "lg", lg: "lg", xl: "xl" }}>
           On 2 April 2019, Kryptokrona was launched to secure and simplify our

@@ -28,9 +28,9 @@
 
 .rgb {
   background: #5f86f2;
-  -webkit-animation: rgb 20s ease infinite;
-  -moz-animation: rgb 20s ease infinite;
-  animation: rgb 20s ease infinite;
+  -webkit-animation: rgb 30s ease infinite;
+  -moz-animation: rgb 30s ease infinite;
+  animation: rgb 30s ease infinite;
 }
 
 @keyframes textrgb {
